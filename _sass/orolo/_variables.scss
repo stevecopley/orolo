@@ -1,27 +1,27 @@
 /* Breakpoint widths */
-$small:  400px  !default;
-$medium: 600px  !default;
-$large:  1024px !default;
+$small: 400px !default;
+$medium: 600px !default;
+$large: 1024px !default;
 $xlarge: 1280px !default;
 
 /* Font Families */
 $font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
-$base-font-size:  20px;
+$base-font-size: 20px;
 $normal-font-weight: 300 !default;
-$heavy-font-weight:  500 !default;
-$light-font-weight:  100 !default;
+$heavy-font-weight: 500 !default;
+$light-font-weight: 100 !default;
 
 /* Colours */
 $text-colour: #111;
 $text-invert: #fff;
 // $accent-colour: #033b5e;
 $accent-colour: #558844;
-$back-colour: #f3f0ed;
-$back-dark: #272624;
+$back-light: #fafafa;
+$back-medium: #9e9e9e;
+$back-dark: #212121;
 
 /* Background Images */
 $welcome-image: 'hero2.jpg';
 
 /* Global transition */
 $global-transition: all 300ms ease !default;
-

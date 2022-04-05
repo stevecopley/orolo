@@ -1,12 +1,11 @@
-
 body {
     color: $text-colour;
-    background: $back-colour;
+    background: $back-light;
 }
 
 a {
     color: $text-colour;
-    text-decoration-color:$accent-colour;
+    text-decoration-color: $accent-colour;
 
     &:hover,
     &:active {
@@ -19,27 +18,51 @@ blockquote {
 }
 
 @keyframes fadein {
-    from { opacity: 0.0; }
-    to   { opacity: 1.0; }
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
 }
 
 @keyframes moveup {
-    from { top: 3rem; }
-    to   { top: 0; }
+    from {
+        top: 3rem;
+    }
+
+    to {
+        top: 0;
+    }
 }
 
 @keyframes wiggle {
-    0%   { bottom: 1rem; }
-    25%  { bottom: 0.8rem; }
-    50%  { bottom: 1rem; }
-    75%  { bottom: 0.8rem; }
-    100% { bottom: 1rem; }
+    0% {
+        bottom: 1rem;
+    }
+
+    25% {
+        bottom: 0.8rem;
+    }
+
+    50% {
+        bottom: 1rem;
+    }
+
+    75% {
+        bottom: 0.8rem;
+    }
+
+    100% {
+        bottom: 1rem;
+    }
 }
 
 #welcome {
     color: $text-invert;
-    background-color: #999;
-    background-image: url( '../images/' + $welcome-image );
+    background-color: $back-medium;
+    background-image: url('../images/'+ $welcome-image);
     background-size: cover;
     background-repeat: none;
     background-position: 75% center;
@@ -60,7 +83,8 @@ blockquote {
     }
 
     #site-logo {
-        animation: fadein 2000ms forwards 1000ms;
+        opacity: 1;
+        // animation: fadein 2000ms forwards 1000ms;
     }
 
     #site-title {
