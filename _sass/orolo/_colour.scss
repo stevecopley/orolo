@@ -1,0 +1,82 @@
+
+body {
+    color: $text-colour;
+    background: $back-colour;
+}
+
+a {
+    color: $text-colour;
+    text-decoration-color:$accent-colour;
+
+    &:hover,
+    &:active {
+        color: $accent-colour;
+    }
+}
+
+blockquote {
+    border-left-color: $accent-colour;
+}
+
+@keyframes fadein {
+    from { opacity: 0.0; }
+    to   { opacity: 1.0; }
+}
+
+@keyframes moveup {
+    from { top: 3rem; }
+    to   { top: 0; }
+}
+
+@keyframes wiggle {
+    0%   { bottom: 1rem; }
+    25%  { bottom: 0.8rem; }
+    50%  { bottom: 1rem; }
+    75%  { bottom: 0.8rem; }
+    100% { bottom: 1rem; }
+}
+
+#welcome {
+    color: $text-invert;
+    background-color: #999;
+    background-image: url( '../images/' + $welcome-image );
+    background-size: cover;
+    background-repeat: none;
+    background-position: 75% center;
+    background-attachment: fixed;
+
+    &::after {
+        opacity: 0;
+        background-color: #00000050;
+        animation: fadein 4000ms forwards 0ms;
+    }
+
+    #site-logo,
+    #site-title,
+    #site-description,
+    #scroll-down {
+        color: $text-invert;
+        opacity: 0;
+    }
+
+    #site-logo {
+        animation: fadein 2000ms forwards 1000ms;
+    }
+
+    #site-title {
+        animation: fadein 1000ms forwards 2000ms, moveup 1000ms forwards 2000ms;
+    }
+
+    #site-description {
+        animation: fadein 1000ms forwards 2500ms, moveup 1000ms forwards 2500ms;
+    }
+
+    #scroll-down {
+        animation: fadein 500ms forwards 3500ms, wiggle 500ms forwards 4000ms;
+    }
+}
+
+#mission {
+    background: $back-dark;
+    color: $text-invert;
+}

@@ -1,0 +1,150 @@
+#welcome {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    position: relative;
+
+    // For darkening overlay
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    #site-logo,
+    #site-title,
+    #site-description,
+    #scroll-down {
+        z-index: 99;
+        margin: 0;
+        position: relative;
+        display: block;
+    }
+
+    #site-title {
+        font-size: 2em;
+        text-align: center;
+
+        @media screen and (min-width: $medium) {
+            font-size: 2.5em;
+        }
+    }
+
+    #site-logo {
+        width: 50%;
+        max-width: 20rem;
+        height: auto;
+
+        @media screen and (min-width: $medium) {
+            max-height: 50vh;
+            width: auto;
+        }
+    }
+
+    #scroll-down {
+        position: absolute;
+        bottom: 1rem;
+        width: 2rem;
+        height: auto;
+    }
+
+    @media screen and (min-width: $medium) {
+        height: 100vh;
+    }
+}
+
+#mission {
+    text-align: center;
+    width: 100%;
+    padding: 4rem 1rem;
+
+    h2 {
+        font-size: 3em;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: $heavy-font-weight;
+
+        @media screen and (min-width: $medium) {
+            font-size: 4em;
+        }
+
+    }
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+        width: 50%;
+
+        &.wide {
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+
+        @media screen and (min-width: $medium) {
+            width: 33.33333333%;
+
+            &.wide {
+                width: 66.66666666%;
+            }
+        }
+
+        @media screen and (min-width: $large) {
+            width: 25%;
+
+            &.wide {
+                width: 50%;
+            }
+        }
+    }
+}
+
+#about {
+    text-align: center;
+    padding: 3rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50ch;
+
+    h2 {
+        font-size: 3em;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: $heavy-font-weight;
+
+        @media screen and (min-width: $medium) {
+            font-size: 4em;
+        }
+
+    }
+}
+
+#main-footer {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+    p {
+        margin: 0;
+    }
+}
