@@ -2,10 +2,12 @@
 
     <object id="site-logo" type="image/svg+xml" data="{{ '/assets/images/analemma-anim.svg' | relative_url }}"></object>
 
-    <h1 id="site-title">{{ site.title }}</h1>
+    <div id="site-name">
+        <h1 id="site-title">{{ site.title }}</h1>
 
-    <p id="site-description" itemprop="description">{{ site.description }}</p>
+        <p id="site-description" itemprop="description">{{ site.description }}</p>
+    </div>
 
-    <img id="scroll-down" src="{{ '/assets/images/down.svg' | relative_url }}" alt="Scroll down">
+    <img id="scroll-down" src="{{ '/assets/images/icon-down.svg' | relative_url }}" alt="Scroll down">
 
 </header>

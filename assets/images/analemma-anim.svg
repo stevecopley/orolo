@@ -1,5 +1,6 @@
 <svg viewBox="0 0 464 464" xmlns="http://www.w3.org/2000/svg">
-    <g transform="translate(-65.244 -32.609) scale(1.20744)" style="stroke:none;fill:#263238">
+    <g transform="translate(-65.244 -32.609) scale(1.20744)" 
+       style="stroke:none; fill:#90a4ae;">
         <title>Dots</title>
         <circle cx="420.656" cy="81.723">
             <animate attributeName="r" from="0" to="5" fill="freeze" begin="0020ms" dur="100ms" />

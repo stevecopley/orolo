@@ -1,8 +1,11 @@
 <nav id="main-nav">
 
-    <a href="#menu" id="menu-toggle">Menu</a>
+    <label for="menu-toggle"><img src="{{ '/assets/images/icon-menu.svg' | relative_url }}" alt="menu icon"></label>
+    <input id="menu-toggle" type="checkbox">
 
-    <ul id="main-menu">
+    <ul>
+        <label for="menu-toggle"><img src="{{ '/assets/images/icon-close.svg' | relative_url }}" alt="menu icon"></label>
+
         <li><a href="#">LINK</a></li>
         <li><a href="#">LINK</a></li>
         <li><a href="#">LINK</a></li>
@@ -10,4 +13,3 @@
         <li><a href="#">LINK</a></li>
     </ul>
 </nav>
-

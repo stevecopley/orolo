@@ -17,6 +17,8 @@ blockquote {
     border-left-color: $accent-colour;
 }
 
+
+
 @keyframes fadein {
     from {
         opacity: 0.0;
@@ -27,6 +29,16 @@ blockquote {
     }
 }
 
+@keyframes fadeout {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
 @keyframes moveup {
     from {
         top: 3rem;
@@ -34,6 +46,16 @@ blockquote {
 
     to {
         top: 0;
+    }
+}
+
+@keyframes moveleft {
+    from {
+        left: 10rem;
+    }
+
+    to {
+        left: 0rem;
     }
 }
 
@@ -59,22 +81,33 @@ blockquote {
     }
 }
 
+@keyframes lighten {
+    from {
+        filter: brightness(0.25) grayscale(0);
+    }
+
+    to {
+        filter: brightness(1) grayscale(0);
+    }
+}
+
+
+
+
 #welcome {
     color: $text-invert;
     background-color: $back-medium;
-    background-image: url('../images/'+ $welcome-image);
-    background-size: cover;
-    background-repeat: none;
-    background-position: 75% center;
-    background-attachment: fixed;
+    // background-image: url('../images/'+ $welcome-image);
+    // background-repeat: repeat;
+    // background-position: center;
+    // background-attachment: fixed;
 
     &::after {
         opacity: 0;
-        background-color: #00000050;
-        animation: fadein 4000ms forwards 0ms;
+        background-color: #00000080;
+        animation: fadein 1500ms forwards 2000ms;
     }
 
-    #site-logo,
     #site-title,
     #site-description,
     #scroll-down {
@@ -83,16 +116,29 @@ blockquote {
     }
 
     #site-logo {
-        opacity: 1;
-        // animation: fadein 2000ms forwards 1000ms;
+        animation: lighten 1500ms forwards 2000ms;
+
+        @media screen and (min-width: $medium) {
+            filter: brightness(0.5);
+            left: 10rem;
+            animation: lighten 1500ms forwards 2000ms, moveleft 1000ms forwards 2000ms;
+        }
     }
 
     #site-title {
         animation: fadein 1000ms forwards 2000ms, moveup 1000ms forwards 2000ms;
+
+        @media screen and (min-width: $medium) {
+            animation: fadein 1000ms forwards 2000ms, moveleft 1000ms forwards 2000ms;
+        }
     }
 
     #site-description {
         animation: fadein 1000ms forwards 2500ms, moveup 1000ms forwards 2500ms;
+
+        @media screen and (min-width: $medium) {
+            animation: fadein 1000ms forwards 2500ms, moveleft 1000ms forwards 2500ms;
+        }
     }
 
     #scroll-down {
@@ -103,4 +149,33 @@ blockquote {
 #mission {
     background: $back-dark;
     color: $text-invert;
+}
+
+
+#main-nav {
+
+    ul {
+        background: $back-dark;
+        color: $text-invert;
+
+        a {
+            color: $accent-colour;
+
+            &:hover {
+                color: $text-invert;
+            }
+        }
+    }
+
+    @media screen and (min-width: $medium) {
+        input[type=checkbox]:not(:checked) ~ ul {
+            opacity: 0;
+            animation: fadein 500ms forwards 3000ms;
+            // background: $back-dark;
+
+            a {
+                // color: $text-colour;
+            }
+        }
+    }
 }
