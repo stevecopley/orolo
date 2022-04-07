@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;800&display=swap');
 
-@import "orolo/config";
-
+@import "orolo/normalise";
 @import "orolo/reset";
 @import "orolo/base";
 @import "orolo/layout";
 @import "orolo/colour";
-@import "orolo/animate";
-@import "orolo/nav";
+@import "orolo/typography";
+@import "orolo/animation";
+@import "orolo/navigation";
 

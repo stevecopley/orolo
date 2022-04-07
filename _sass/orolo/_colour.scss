@@ -2,11 +2,10 @@ $text-colour: #111;
 $text-invert: #fff;
 $text-dull:   #777;
 
-$accent-colour: #ff9800;
-$accent-dark:   #002940;
+$accent-colour: #ff7043;
 
 $back-light:  #eceff1;
-$back-medium: #546e7a;
+$back-medium: #455a64;
 $back-dark:   #263238;
 $back-darker: #141a1d;
 
@@ -14,11 +13,15 @@ $back-darker: #141a1d;
 
 body {
     color: $text-colour;
+    background: $back-medium;
+}
+
+main {
     background: $back-light;
 }
 
 a {
-    color: $text-colour;
+    color: inherit;
     text-decoration-color: $accent-colour;
 
     &:hover,
@@ -50,22 +53,22 @@ blockquote {
 
 #main-nav {
     background: $back-medium;
+    color: $text-invert;
 
     ul {
         background: $back-darker;
 
-        a {
-            color: $text-invert;
-            text-decoration: none;
-
-            &:hover {
-                color: $text-invert;
-                text-decoration: underline;
-            }
-        }
-
         @media screen and (min-width: $medium) {
             background: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $text-invert;
+            text-decoration: underline;
         }
     }
 }
@@ -76,9 +79,26 @@ blockquote {
 }
 
 
-#mission {
+#teaching {
     background: $back-dark;
     color: $text-invert;
 }
 
+#mtb {
+    background: $back-dark;
+    color: $text-invert;
+}
 
+#main-footer {
+    background-color: $back-darker;
+    color: $text-dull;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $text-invert;
+            text-decoration: underline;
+        }
+    }
+}

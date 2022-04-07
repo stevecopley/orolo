@@ -1,12 +1,16 @@
 title:       "orolo.dev"
-description: "home of Steve Copley"
+description: "the home of Steve Copley"
+owner:       "Steve Copley"
 
 address:     "Nelson, NZ"
-email:       "admin@orolo.dev"
+email:       "steve@orolo.dev"
 
 github:      "https://github.com/stevecopley"
-instagram:   "https://www.instagram.com/orolo.dev"
-twitter:     "https://twitter.com/OroloDev"
+linkedin:    "https://www.linkedin.com/in/stevecopley/"
+instagram:   "https://www.instagram.com/stevecopley"
+twitter:     "https://twitter.com/stevecopley"
+# instagram:   "https://www.instagram.com/orolo.dev"
+# twitter:     "https://twitter.com/OroloDev"
 
 markdown: kramdown
 

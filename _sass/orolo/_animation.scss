@@ -1,3 +1,5 @@
+$global-transition: all 300ms ease !default;
+
 $start-logo:   2000ms;
 $start-title:  2500ms;
 $start-desc:   3000ms;
@@ -9,6 +11,11 @@ $fast:   500ms;
 $slow:  1000ms;
 $vslow: 1500ms;
 
+
+a {
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+}
 
 @keyframes fadein {
     from {
@@ -113,12 +120,7 @@ $vslow: 1500ms;
 }
 
 
-#main-nav {
-
-    @media screen and (min-width: $medium) {
-        input[type=checkbox]:not(:checked) ~ ul {
-            opacity: 0;
-            animation: fadein $fast forwards $start-menu;
-        }
-    }
+#main-nav.nav-home {
+    opacity: 0;
+    animation: fadein $fast forwards $start-menu;
 }

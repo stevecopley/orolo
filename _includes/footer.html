@@ -1,19 +1,17 @@
 <footer id="main-footer">
 
-    <div class="address">
-        {{ site.address }}
-    </div>
-
     <div class="email">
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
 
     <div class="social">
+        <a href="{{ site.github    }}">GitHub</a> |
+        <a href="{{ site.linkedin  }}">LinkedIn</a> |
         <a href="{{ site.instagram }}">Instagram</a> |
         <a href="{{ site.twitter   }}">Twitter</a>
     </div>
 
     <div class="copyright">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.owner | default: site.title }}, {{ site.address }}</p>
     </div>
 </footer>

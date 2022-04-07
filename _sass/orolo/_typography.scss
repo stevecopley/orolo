@@ -1,0 +1,53 @@
+$body-font-family: 'Heebo', 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$head-font-family: 'Heebo', 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+
+$base-font-size: 20px;
+
+$light-font-weight:  100 !default;
+$normal-font-weight: 300 !default;
+$heavy-font-weight:  800 !default;
+
+
+html {
+    font-family: $body-font-family;
+    font-weight: $normal-font-weight;
+    font-size: $base-font-size;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $head-font-family;
+    font-weight: $light-font-weight;
+    text-rendering: optimizeLegibility; /* enable common ligatures and kerning */
+}
+
+#site-title {
+    font-size: 2.5em;
+ 
+    @media screen and (min-width: $medium) {
+        font-size: 10vh;
+    }
+}
+
+main {
+    section {
+        text-align: left;
+    }
+    
+    h2 {
+        font-size: 2em;
+        line-height: 1;
+        // text-transform: uppercase;
+        font-weight: $heavy-font-weight;
+        text-align: center;
+
+        @media screen and (min-width: $medium) {
+            font-size: 3em;
+        }
+    }
+}
+
+#main-footer {
+    font-size: 0.85rem;
+}
+
