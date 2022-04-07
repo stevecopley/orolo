@@ -1,11 +1,14 @@
 $text-colour: #111;
 $text-invert: #fff;
+$text-dull:   #777;
 
-$accent-colour: #002940;
+$accent-colour: #ff9800;
+$accent-dark:   #002940;
 
-$back-light: #eceff1;
+$back-light:  #eceff1;
 $back-medium: #546e7a;
-$back-dark: #263238;
+$back-dark:   #263238;
+$back-darker: #141a1d;
 
 
 
@@ -32,6 +35,7 @@ blockquote {
 #welcome {
     color: $text-invert;
     background-color: $back-medium;
+    // background-image: linear-gradient($back-dark, $back-medium);
     // background-image: url('../images/'+ $welcome-image);
     // background-repeat: repeat;
     // background-position: center;
@@ -44,24 +48,37 @@ blockquote {
     }
 }
 
+#main-nav {
+    background: $back-medium;
+
+    ul {
+        background: $back-darker;
+
+        a {
+            color: $text-invert;
+            text-decoration: none;
+
+            &:hover {
+                color: $text-invert;
+                text-decoration: underline;
+            }
+        }
+
+        @media screen and (min-width: $medium) {
+            background: none;
+        }
+    }
+}
+
+
+#more {
+    background: $back-medium;
+}
+
+
 #mission {
     background: $back-dark;
     color: $text-invert;
 }
 
 
-#main-nav {
-
-    ul {
-        background: $back-medium;
-        color: $text-invert;
-
-        a {
-            color: $accent-colour;
-
-            &:hover {
-                color: $text-invert;
-            }
-        }
-    }
-}

@@ -42,7 +42,7 @@ $vslow: 1500ms;
 
 @keyframes moveleft {
     from {
-        left: 10rem;
+        left: 6rem;
     }
 
     to {
@@ -52,63 +52,64 @@ $vslow: 1500ms;
 
 @keyframes wiggle {
     0% {
-        bottom: 1rem;
+        bottom: 0rem;
     }
 
     25% {
-        bottom: 0.8rem;
+        bottom: -0.2rem;
     }
 
     50% {
-        bottom: 1rem;
+        bottom: 0rem;
     }
 
     75% {
-        bottom: 0.8rem;
+        bottom: -0.2rem;
     }
 
     100% {
-        bottom: 1rem;
+        bottom: 0rem;
     }
 }
 
 
-#welcome {
+#site-logo {
+    position: relative;
+    top: 3rem;
+    animation: moveup $vslow forwards $start-logo;
 
-    #site-logo {
-        // animation: lighten 1500ms forwards 2000ms;
-
-        @media screen and (min-width: $medium) {
-            left: 10rem;
-            animation: moveleft $vslow forwards $start-logo;
-        }
+    @media screen and (min-width: $medium) {
+        top: 0;
+        left: 6rem;
+        animation: moveleft $vslow forwards $start-logo;
     }
+}
 
-    #site-title,
-    #site-description,
-    #scroll-down {
-        opacity: 0;
+#site-title,
+#site-description,
+#scroll-down {
+    position: relative;
+    opacity: 0;
+}
+
+#site-title {
+    animation: fadein $slow forwards $start-title, moveup $slow forwards $start-title;
+
+    @media screen and (min-width: $medium) {
+        animation: fadein $slow forwards $start-title, moveleft $slow forwards $start-title;
     }
+}
 
-    #site-title {
-        animation: fadein $slow forwards $start-title, moveup $slow forwards $start-title;
+#site-description {
+    animation: fadein $slow forwards $start-desc, moveup $slow forwards $start-desc;
 
-        @media screen and (min-width: $medium) {
-            animation: fadein $slow forwards $start-title, moveleft $slow forwards $start-title;
-        }
+    @media screen and (min-width: $medium) {
+        animation: fadein $slow forwards $start-desc, moveleft $slow forwards $start-desc;
     }
+}
 
-    #site-description {
-        animation: fadein $slow forwards $start-desc, moveup $slow forwards $start-desc;
-
-        @media screen and (min-width: $medium) {
-            animation: fadein $slow forwards $start-desc, moveleft $slow forwards $start-desc;
-        }
-    }
-
-    #scroll-down {
-        animation: fadein $fast forwards $start-scroll, wiggle $fast forwards $start-wiggle;
-    }
+#scroll-down {
+    animation: fadein $fast forwards $start-scroll, wiggle $fast forwards $start-wiggle;
 }
 
 

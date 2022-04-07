@@ -1,0 +1,84 @@
+<svg viewBox="0 0 464 464" xmlns="http://www.w3.org/2000/svg">
+   
+    <g id="analemma"
+       transform="translate(-65.244 -32.609) scale(1.20744)" 
+       style="stroke:#fff; fill:#002940;">
+
+        <title>Analemma</title>
+       
+        <circle cx="420.656" cy="081.723"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0020ms" dur="100ms" /></circle>
+        <circle cx="422.582" cy="086.852"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0040ms" dur="100ms" /></circle>
+        <circle cx="420.898" cy="092.789"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0060ms" dur="100ms" /></circle>
+        <circle cx="415.832" cy="099.453"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0080ms" dur="100ms" /></circle>
+        <circle cx="407.695" cy="106.770"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0100ms" dur="100ms" /></circle>
+        <circle cx="396.852" cy="114.676"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0120ms" dur="100ms" /></circle>
+        <circle cx="383.684" cy="123.121"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0140ms" dur="100ms" /></circle>
+        <circle cx="368.590" cy="132.059"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0160ms" dur="100ms" /></circle>
+        <circle cx="351.961" cy="141.453"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0180ms" dur="100ms" /></circle>
+        <circle cx="334.176" cy="151.270"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0200ms" dur="100ms" /></circle>
+        <circle cx="315.578" cy="161.473"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0220ms" dur="100ms" /></circle>
+        <circle cx="296.496" cy="172.027"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0240ms" dur="100ms" /></circle>
+        <circle cx="277.227" cy="182.898"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0260ms" dur="100ms" /></circle>
+        <circle cx="258.031" cy="194.047"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0280ms" dur="100ms" /></circle>
+        <circle cx="239.148" cy="205.426"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0300ms" dur="100ms" /></circle>
+        <circle cx="220.785" cy="216.984"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0320ms" dur="100ms" /></circle>
+        <circle cx="203.121" cy="228.672"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0340ms" dur="100ms" /></circle>
+        <circle cx="186.301" cy="240.426"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0360ms" dur="100ms" /></circle>
+        <circle cx="170.457" cy="252.184"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0380ms" dur="100ms" /></circle>
+        <circle cx="155.691" cy="263.871"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0400ms" dur="100ms" /></circle>
+        <circle cx="142.090" cy="275.422"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0420ms" dur="100ms" /></circle>
+        <circle cx="129.715" cy="286.754"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0440ms" dur="100ms" /></circle>
+        <circle cx="118.609" cy="297.789"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0460ms" dur="100ms" /></circle>
+        <circle cx="108.805" cy="308.445"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0480ms" dur="100ms" /></circle>
+        <circle cx="100.313" cy="318.641"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0500ms" dur="100ms" /></circle>
+        <circle cx="093.129" cy="328.289"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0520ms" dur="100ms" /></circle>
+        <circle cx="087.234" cy="337.313"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0540ms" dur="100ms" /></circle>
+        <circle cx="082.605" cy="345.621"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0560ms" dur="100ms" /></circle>
+        <circle cx="079.191" cy="353.145"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0580ms" dur="100ms" /></circle>
+        <circle cx="076.934" cy="359.805"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0600ms" dur="100ms" /></circle>
+        <circle cx="075.770" cy="365.535"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0620ms" dur="100ms" /></circle>
+        <circle cx="075.617" cy="370.266"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0640ms" dur="100ms" /></circle>
+        <circle cx="076.387" cy="373.949"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0660ms" dur="100ms" /></circle>
+        <circle cx="077.984" cy="376.539"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0680ms" dur="100ms" /></circle>
+        <circle cx="080.301" cy="377.992"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0700ms" dur="100ms" /></circle>
+        <circle cx="083.234" cy="378.281"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0720ms" dur="100ms" /></circle>
+        <circle cx="086.672" cy="377.395"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0740ms" dur="100ms" /></circle>
+        <circle cx="090.508" cy="375.324"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0760ms" dur="100ms" /></circle>
+        <circle cx="094.637" cy="372.082"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0780ms" dur="100ms" /></circle>
+        <circle cx="098.961" cy="367.676"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0800ms" dur="100ms" /></circle>
+        <circle cx="103.387" cy="362.141"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0820ms" dur="100ms" /></circle>
+        <circle cx="107.840" cy="355.516"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0840ms" dur="100ms" /></circle>
+        <circle cx="112.246" cy="347.848"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0860ms" dur="100ms" /></circle>
+        <circle cx="116.559" cy="339.188"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0880ms" dur="100ms" /></circle>
+        <circle cx="120.738" cy="329.609"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0900ms" dur="100ms" /></circle>
+        <circle cx="124.762" cy="319.184"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0920ms" dur="100ms" /></circle>
+        <circle cx="128.625" cy="307.984"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0940ms" dur="100ms" /></circle>
+        <circle cx="132.348" cy="296.098"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0960ms" dur="100ms" /></circle>
+        <circle cx="135.961" cy="283.609"><animate attributeName="r" from="0" to="5" fill="freeze" begin="0980ms" dur="100ms" /></circle>
+        <circle cx="139.520" cy="270.613"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1000ms" dur="100ms" /></circle>
+        <circle cx="143.094" cy="257.207"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1020ms" dur="100ms" /></circle>
+        <circle cx="146.781" cy="243.488"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1040ms" dur="100ms" /></circle>
+        <circle cx="150.699" cy="229.563"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1060ms" dur="100ms" /></circle>
+        <circle cx="154.977" cy="215.531"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1080ms" dur="100ms" /></circle>
+        <circle cx="159.781" cy="201.504"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1100ms" dur="100ms" /></circle>
+        <circle cx="165.281" cy="187.594"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1120ms" dur="100ms" /></circle>
+        <circle cx="171.676" cy="173.918"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1140ms" dur="100ms" /></circle>
+        <circle cx="179.168" cy="160.594"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1160ms" dur="100ms" /></circle>
+        <circle cx="187.973" cy="147.742"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1180ms" dur="100ms" /></circle>
+        <circle cx="198.289" cy="135.496"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1200ms" dur="100ms" /></circle>
+        <circle cx="210.293" cy="123.977"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1220ms" dur="100ms" /></circle>
+        <circle cx="224.105" cy="113.316"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1240ms" dur="100ms" /></circle>
+        <circle cx="239.777" cy="103.641"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1260ms" dur="100ms" /></circle>
+        <circle cx="257.234" cy="095.066"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1280ms" dur="100ms" /></circle>
+        <circle cx="276.258" cy="087.711"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1300ms" dur="100ms" /></circle>
+        <circle cx="296.473" cy="081.656"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1320ms" dur="100ms" /></circle>
+        <circle cx="317.320" cy="076.973"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1340ms" dur="100ms" /></circle>
+        <circle cx="338.113" cy="073.691"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1360ms" dur="100ms" /></circle>
+        <circle cx="358.055" cy="071.820"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1380ms" dur="100ms" /></circle>
+        <circle cx="376.348" cy="071.320"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1400ms" dur="100ms" /></circle>
+        <circle cx="392.250" cy="072.129"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1420ms" dur="100ms" /></circle>
+        <circle cx="405.160" cy="074.164"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1440ms" dur="100ms" /></circle>
+        <circle cx="414.641" cy="077.320"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1460ms" dur="100ms" /></circle>
+        <circle cx="420.457" cy="081.496"><animate attributeName="r" from="0" to="5" fill="freeze" begin="1480ms" dur="100ms" /></circle>
+    </g>
+</svg>
