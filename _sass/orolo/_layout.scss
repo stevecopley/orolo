@@ -7,17 +7,6 @@
     gap: 5vh;
     position: relative;
 
-    // For darkening overlay
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-    }
-
     #site-name {
         @media screen and (min-width: $medium) {
             display: flex;

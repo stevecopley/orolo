@@ -1,3 +1,14 @@
+$text-colour: #111;
+$text-invert: #fff;
+
+$accent-colour: #002940;
+
+$back-light: #eceff1;
+$back-medium: #546e7a;
+$back-dark: #263238;
+
+
+
 body {
     color: $text-colour;
     background: $back-light;
@@ -18,82 +29,6 @@ blockquote {
 }
 
 
-
-@keyframes fadein {
-    from {
-        opacity: 0.0;
-    }
-
-    to {
-        opacity: 1.0;
-    }
-}
-
-@keyframes fadeout {
-    from {
-        opacity: 1.0;
-    }
-
-    to {
-        opacity: 0.0;
-    }
-}
-
-@keyframes moveup {
-    from {
-        top: 3rem;
-    }
-
-    to {
-        top: 0;
-    }
-}
-
-@keyframes moveleft {
-    from {
-        left: 10rem;
-    }
-
-    to {
-        left: 0rem;
-    }
-}
-
-@keyframes wiggle {
-    0% {
-        bottom: 1rem;
-    }
-
-    25% {
-        bottom: 0.8rem;
-    }
-
-    50% {
-        bottom: 1rem;
-    }
-
-    75% {
-        bottom: 0.8rem;
-    }
-
-    100% {
-        bottom: 1rem;
-    }
-}
-
-@keyframes lighten {
-    from {
-        filter: brightness(0.25) grayscale(0);
-    }
-
-    to {
-        filter: brightness(1) grayscale(0);
-    }
-}
-
-
-
-
 #welcome {
     color: $text-invert;
     background-color: $back-medium;
@@ -102,47 +37,10 @@ blockquote {
     // background-position: center;
     // background-attachment: fixed;
 
-    &::after {
-        opacity: 0;
-        background-color: #00000080;
-        animation: fadein 1500ms forwards 2000ms;
-    }
-
     #site-title,
     #site-description,
     #scroll-down {
         color: $text-invert;
-        opacity: 0;
-    }
-
-    #site-logo {
-        animation: lighten 1500ms forwards 2000ms;
-
-        @media screen and (min-width: $medium) {
-            filter: brightness(0.5);
-            left: 10rem;
-            animation: lighten 1500ms forwards 2000ms, moveleft 1000ms forwards 2000ms;
-        }
-    }
-
-    #site-title {
-        animation: fadein 1000ms forwards 2000ms, moveup 1000ms forwards 2000ms;
-
-        @media screen and (min-width: $medium) {
-            animation: fadein 1000ms forwards 2000ms, moveleft 1000ms forwards 2000ms;
-        }
-    }
-
-    #site-description {
-        animation: fadein 1000ms forwards 2500ms, moveup 1000ms forwards 2500ms;
-
-        @media screen and (min-width: $medium) {
-            animation: fadein 1000ms forwards 2500ms, moveleft 1000ms forwards 2500ms;
-        }
-    }
-
-    #scroll-down {
-        animation: fadein 500ms forwards 3500ms, wiggle 500ms forwards 4000ms;
     }
 }
 
@@ -155,7 +53,7 @@ blockquote {
 #main-nav {
 
     ul {
-        background: $back-dark;
+        background: $back-medium;
         color: $text-invert;
 
         a {
@@ -163,18 +61,6 @@ blockquote {
 
             &:hover {
                 color: $text-invert;
-            }
-        }
-    }
-
-    @media screen and (min-width: $medium) {
-        input[type=checkbox]:not(:checked) ~ ul {
-            opacity: 0;
-            animation: fadein 500ms forwards 3000ms;
-            // background: $back-dark;
-
-            a {
-                // color: $text-colour;
             }
         }
     }

@@ -1,0 +1,123 @@
+$start-logo:   2000ms;
+$start-title:  2500ms;
+$start-desc:   3000ms;
+$start-menu:   3500ms;
+$start-scroll: 3500ms;
+$start-wiggle: 4000ms;
+
+$fast:   500ms;
+$slow:  1000ms;
+$vslow: 1500ms;
+
+
+@keyframes fadein {
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+@keyframes moveup {
+    from {
+        top: 3rem;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes moveleft {
+    from {
+        left: 10rem;
+    }
+
+    to {
+        left: 0rem;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        bottom: 1rem;
+    }
+
+    25% {
+        bottom: 0.8rem;
+    }
+
+    50% {
+        bottom: 1rem;
+    }
+
+    75% {
+        bottom: 0.8rem;
+    }
+
+    100% {
+        bottom: 1rem;
+    }
+}
+
+
+#welcome {
+
+    #site-logo {
+        // animation: lighten 1500ms forwards 2000ms;
+
+        @media screen and (min-width: $medium) {
+            left: 10rem;
+            animation: moveleft $vslow forwards $start-logo;
+        }
+    }
+
+    #site-title,
+    #site-description,
+    #scroll-down {
+        opacity: 0;
+    }
+
+    #site-title {
+        animation: fadein $slow forwards $start-title, moveup $slow forwards $start-title;
+
+        @media screen and (min-width: $medium) {
+            animation: fadein $slow forwards $start-title, moveleft $slow forwards $start-title;
+        }
+    }
+
+    #site-description {
+        animation: fadein $slow forwards $start-desc, moveup $slow forwards $start-desc;
+
+        @media screen and (min-width: $medium) {
+            animation: fadein $slow forwards $start-desc, moveleft $slow forwards $start-desc;
+        }
+    }
+
+    #scroll-down {
+        animation: fadein $fast forwards $start-scroll, wiggle $fast forwards $start-wiggle;
+    }
+}
+
+
+#main-nav {
+
+    @media screen and (min-width: $medium) {
+        input[type=checkbox]:not(:checked) ~ ul {
+            opacity: 0;
+            animation: fadein $fast forwards $start-menu;
+        }
+    }
+}
