@@ -1,12 +1,12 @@
 <header id="welcome">
 
     <div id="site-info">
-        <object id="site-logo" type="image/svg+xml" data="{{ '/assets/images/analemma-anim-dark.svg' | relative_url }}"></object>
+        <object id="site-logo" type="image/svg+xml" data="{{ site.logo-main | prepend: '/assets/images/' | relative_url }}"></object>
 
         <div id="site-text">
             <h1 id="site-title">{{ site.title }}</h1>
 
-            <p id="site-description" itemprop="description">{{ site.description }}</p>
+            <p id="site-description" itemprop="description">{{ site.description }} <em>{{ site.owner }}</em></p>
         </div>
     </div>
 

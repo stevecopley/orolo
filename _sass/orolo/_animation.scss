@@ -121,6 +121,8 @@ a {
 
 
 #main-nav.nav-home {
-    opacity: 0;
-    animation: fadein $fast forwards $start-menu;
+    @media screen and (min-width: $medium) {
+        opacity: 0;
+        animation: fadein $fast forwards $start-menu;
+    }
 }

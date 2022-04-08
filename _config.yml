@@ -1,5 +1,5 @@
 title:       "orolo.dev"
-description: "the home of Steve Copley"
+description: "the home of"
 owner:       "Steve Copley"
 
 address:     "Nelson, NZ"
@@ -11,6 +11,9 @@ instagram:   "https://www.instagram.com/stevecopley"
 twitter:     "https://twitter.com/stevecopley"
 # instagram:   "https://www.instagram.com/orolo.dev"
 # twitter:     "https://twitter.com/OroloDev"
+
+logo-main:   "analemma-anim-pinkblue.svg"
+logo-menu:   "analemma-anim-light.svg"
 
 markdown: kramdown
 

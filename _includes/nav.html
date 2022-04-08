@@ -2,7 +2,7 @@
 
     {% if page.layout == "page" %} 
         <a id="home-link" href="/">
-            <img id="menu-logo" src="{{ '/assets/images/analemma-anim-light.svg' | relative_url }}" alt="site logo"> 
+            <img id="menu-logo" src="{{ site.logo-menu | prepend: '/assets/images/' | relative_url }}" alt="site logo"> 
             <h1 id="menu-title">{{ site.title }}</h1> 
         </a>
     {% endif %}

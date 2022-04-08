@@ -1,59 +1,54 @@
-$text-colour: #111;
+$text-dark:   #111;
 $text-invert: #fff;
-$text-dull:   #777;
+$text-dull:   #999;
 
-$accent-colour: #ff7043;
+$accent1:     #ec407a;
+$accent2:     #42a5f5;
+
+$accent1-tint: #ec407a80;
+$accent2-tint: #42a5f580;
 
 $back-light:  #eceff1;
 $back-medium: #455a64;
 $back-dark:   #263238;
 $back-darker: #141a1d;
 
+$back-body:   #000;
+$back-panel:  #141a1dc0;
 
 
 body {
-    color: $text-colour;
-    background: $back-medium;
+    color: $text-invert;
+    background: $back-body;
 }
 
 main {
     background: $back-light;
+    color: $text-dark;
 }
 
 a {
     color: inherit;
-    text-decoration-color: $accent-colour;
+    text-decoration-color: $accent2;
 
     &:hover,
     &:active {
-        color: $accent-colour;
+        color: $accent2;
+        text-decoration: underline;
     }
 }
 
 blockquote {
-    border-left-color: $accent-colour;
+    border-left-color: $accent1;
 }
 
-
-#welcome {
-    color: $text-invert;
-    background-color: $back-medium;
-    // background-image: linear-gradient($back-dark, $back-medium);
-    // background-image: url('../images/'+ $welcome-image);
-    // background-repeat: repeat;
-    // background-position: center;
-    // background-attachment: fixed;
-
-    #site-title,
-    #site-description,
-    #scroll-down {
-        color: $text-invert;
-    }
+em {
+    font-style: normal;
+    color: $accent2;
 }
 
 #main-nav {
-    background: $back-medium;
-    color: $text-invert;
+    background-color: $back-panel;
 
     ul {
         background: $back-darker;
@@ -67,21 +62,31 @@ blockquote {
         text-decoration: none;
 
         &:hover {
+            // text-decoration: underline;
+            background-color: $accent1;
             color: $text-invert;
-            text-decoration: underline;
         }
+    }
+
+    @media screen and (min-width: $medium) {
+        background: $back-body;
     }
 }
 
 
-#more {
-    background: $back-medium;
+#about {
+    background: $back-light;
+    color: $text-dark;
 }
-
 
 #teaching {
     background: $back-dark;
     color: $text-invert;
+}
+
+#coding {
+    background: $back-light;
+    color: $text-dark;
 }
 
 #mtb {
@@ -90,14 +95,12 @@ blockquote {
 }
 
 #main-footer {
-    background-color: $back-darker;
     color: $text-dull;
 
     a {
         text-decoration: none;
 
         &:hover {
-            color: $text-invert;
             text-decoration: underline;
         }
     }
