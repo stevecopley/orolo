@@ -1,8 +1,9 @@
-var toggleButton = document.getElementById( "menu-toggle" );
-var menu = document.getElementById( "main-menu" );
+const navElement = document.getElementById( 'main-nav' );
 
-if( toggleButton && menu ) {
-    toggleButton.addEventListener( "click", function() {
-        menu.classList.toggle( "menu-visible" );
-    });
-}
+const observer = new IntersectionObserver( 
+    ( [e] ) => e.target.classList.toggle( 'sticking', e.intersectionRatio < 1 ),
+    { threshold: [1] }
+);
+
+observer.observe( navElement );
+

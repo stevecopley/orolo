@@ -1,4 +1,5 @@
-$global-transition: all 300ms ease !default;
+$transition-fast: all  500ms ease !default;
+$transition-slow: all 1000ms ease !default;
 
 $start-logo:   2000ms;
 $start-title:  2500ms;
@@ -13,8 +14,13 @@ $vslow: 1500ms;
 
 
 a {
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
+    -webkit-transition: $transition-fast;
+    transition: $transition-fast;
+}
+
+h2 {
+    -webkit-transition: $transition-slow;
+    transition: $transition-slow;
 }
 
 @keyframes fadein {
@@ -80,40 +86,43 @@ a {
 }
 
 
-#site-logo {
-    position: relative;
-    top: 3rem;
-    animation: moveup $vslow forwards $start-logo;
+#welcome.home {
+    #site-logo {
+        position: relative;
+        top: 3rem;
+        animation: moveup $vslow forwards $start-logo;
 
-    @media screen and (min-width: $medium) {
-        top: 0;
-        left: 6rem;
-        animation: moveleft $vslow forwards $start-logo;
+        @media screen and (min-width: $medium) {
+            top: 0;
+            left: 6rem;
+            animation: moveleft $vslow forwards $start-logo;
+        }
+    }
+
+    #site-title,
+    #site-description,
+    #scroll-down {
+        position: relative;
+        opacity: 0;
+    }
+
+    #site-title {
+        animation: fadein $slow forwards $start-title, moveup $slow forwards $start-title;
+
+        @media screen and (min-width: $medium) {
+            animation: fadein $slow forwards $start-title, moveleft $slow forwards $start-title;
+        }
+    }
+
+    #site-description {
+        animation: fadein $slow forwards $start-desc, moveup $slow forwards $start-desc;
+
+        @media screen and (min-width: $medium) {
+            animation: fadein $slow forwards $start-desc, moveleft $slow forwards $start-desc;
+        }
     }
 }
 
-#site-title,
-#site-description,
-#scroll-down {
-    position: relative;
-    opacity: 0;
-}
-
-#site-title {
-    animation: fadein $slow forwards $start-title, moveup $slow forwards $start-title;
-
-    @media screen and (min-width: $medium) {
-        animation: fadein $slow forwards $start-title, moveleft $slow forwards $start-title;
-    }
-}
-
-#site-description {
-    animation: fadein $slow forwards $start-desc, moveup $slow forwards $start-desc;
-
-    @media screen and (min-width: $medium) {
-        animation: fadein $slow forwards $start-desc, moveleft $slow forwards $start-desc;
-    }
-}
 
 #scroll-down {
     animation: fadein $fast forwards $start-scroll, wiggle $fast forwards $start-wiggle;

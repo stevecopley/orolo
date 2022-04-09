@@ -2,24 +2,30 @@
 
 <html lang="en">
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+    <body>
 
-    {% include nav.html %}
+        {% include header.html %}
 
-    <main aria-label="Content" class="fullpage">
+        {% include nav.html %}
 
-        <h2>{{ page.title }}</h2>
-        
-        {{ content }}
+        <main aria-label="Content">
 
-    </main>
+            <article>
 
-    {% include footer.html %}
+                <h2>{{ page.title }}</h2>
+                
+                {{ content }}
 
-    {% include scripts.html %}
+            </article>
 
-</body>
+        </main>
+
+        {% include footer.html %}
+
+        {% include scripts.html %}
+
+    </body>
 
 </html>

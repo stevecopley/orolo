@@ -12,8 +12,7 @@ twitter:     "https://twitter.com/stevecopley"
 # instagram:   "https://www.instagram.com/orolo.dev"
 # twitter:     "https://twitter.com/OroloDev"
 
-logo-main:   "analemma-anim-pinkblue.svg"
-logo-menu:   "analemma-anim-light.svg"
+logo:        "analemma-pinkblue.svg"
 
-markdown: kramdown
+markdown:    kramdown
 

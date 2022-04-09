@@ -1,20 +1,25 @@
-$text-dark:   #111;
-$text-invert: #fff;
-$text-dull:   #999;
+$text-dark:    #111;
+$text-invert:  #fff;
+$text-dull:    #999;
 
-$accent1:     #ec407a;
-$accent2:     #42a5f5;
+$accent1:      #ec407a;
+$accent2:      #2196f3;
 
 $accent1-tint: #ec407a80;
-$accent2-tint: #42a5f580;
+$accent2-tint: #2196f380;
 
-$back-light:  #eceff1;
-$back-medium: #455a64;
-$back-dark:   #263238;
-$back-darker: #141a1d;
+$back-light:   #eceff1;
+$back-medium:  #455a64;
+$back-dark:    #263238;
+$back-darker:  #0a0a0a;
+$back-darkest: #050505;
 
-$back-body:   #000;
-$back-panel:  #141a1dc0;
+$back-body:    #000;
+$back-shade:   #00000080;
+$back-panel:   #000000c0;
+
+$shadow-small: 0 0.10rem 0.2rem $back-shade;
+$shadow-large: 0 0.25rem 0.5rem $back-shade;
 
 
 body {
@@ -23,8 +28,8 @@ body {
 }
 
 main {
-    background: $back-light;
-    color: $text-dark;
+    background: $back-darker;
+    // color: $text-dark;
 }
 
 a {
@@ -38,6 +43,29 @@ a {
     }
 }
 
+h3, h4, h5, h6 {
+    color: $accent1;
+}
+
+h2 {
+    color: $accent2;
+
+    // background-color: $accent2;
+    // background-image: linear-gradient(45deg, $accent2, $accent1, $accent2);
+    // background-position: 0;
+    // background-size: 200%;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -moz-background-clip: text;
+    // -moz-text-fill-color: transparent;
+}
+
+section:hover {
+    h2 {
+        background-position: 100%;
+    }
+}
+
 blockquote {
     border-left-color: $accent1;
 }
@@ -46,6 +74,7 @@ em {
     font-style: normal;
     color: $accent2;
 }
+
 
 #main-nav {
     background-color: $back-panel;
@@ -56,14 +85,18 @@ em {
         @media screen and (min-width: $medium) {
             background: none;
         }
+
+        label::before {
+            background-color: $back-shade;
+        }
     }
 
     a {
         text-decoration: none;
+        border-bottom: 5px solid transparent;
 
         &:hover {
-            // text-decoration: underline;
-            background-color: $accent1;
+            border-color: $accent1;
             color: $text-invert;
         }
     }
@@ -75,23 +108,23 @@ em {
 
 
 #about {
-    background: $back-light;
-    color: $text-dark;
+    background: $back-darker;
+    // color: $text-dark;
 }
 
 #teaching {
-    background: $back-dark;
-    color: $text-invert;
+    background: $back-darkest;
+    // color: $text-invert;
 }
 
 #coding {
-    background: $back-light;
-    color: $text-dark;
+    background: $back-darker;
+    // color: $text-dark;
 }
 
 #mtb {
-    background: $back-dark;
-    color: $text-invert;
+    background: $back-darkest;
+    // color: $text-invert;
 }
 
 #main-footer {

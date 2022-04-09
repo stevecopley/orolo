@@ -1,11 +1,9 @@
 <nav id="main-nav" {% if page.layout == "home" %} class="nav-home" {% endif %} >
 
-    {% if page.layout == "page" %} 
-        <a id="home-link" href="/">
-            <img id="menu-logo" src="{{ site.logo-menu | prepend: '/assets/images/' | relative_url }}" alt="site logo"> 
-            <h1 id="menu-title">{{ site.title }}</h1> 
-        </a>
-    {% endif %}
+    <a id="home-link" href="/">
+        <img id="menu-logo" src="{{ site.logo | prepend: '/assets/images/' | relative_url }}" alt="site logo"> 
+        <h1 id="menu-title">{{ site.title }}</h1> 
+    </a>
 
     <label for="menu-toggle"><img src="{{ '/assets/images/icon-menu.svg' | relative_url }}" alt="menu icon"></label>
     <input id="menu-toggle" type="checkbox">
@@ -16,11 +14,11 @@
         {% if page.layout == "page" %} 
             <li><a href="/">Home</a></li> 
         {% endif %}
-        <li><a href="/#about">About Me</a></li>
-        <li><a href="/#teaching">Teaching</a></li>
-        <li><a href="/#coding">Coding</a></li>
-        <li><a href="/#mtb">Cycling</a></li>
-        <li><a href="/books.html">Books</a></li>
+        <li><a href="/#about">Who?</a></li>
+        <li><a href="/#teaching">Teach</a></li>
+        <li><a href="/#coding">Code</a></li>
+        <li><a href="/#mtb">Bike</a></li>
+        <li><a href="/books.html">Read</a></li>
     </ul>
 
 </nav>

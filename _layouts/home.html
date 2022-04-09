@@ -2,32 +2,26 @@
 
 <html lang="en">
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+    <body>
 
-    {% include header.html %}
+        {% include header.html %}
 
-    {% include nav.html %}
+        {% include nav.html %}
 
-    {% include more.html %}
+        {% include more.html %}
 
-    <main aria-label="Content">
+        <main aria-label="Content">
 
-        {% include about.html %}
+            {{ content }}
 
-        {% include teaching.html %}
+        </main>
 
-        {% include coding.html %}
+        {% include footer.html %}
 
-        {% include mtb.html %}
+        {% include scripts.html %}
 
-    </main>
-
-    {% include footer.html %}
-
-    {% include scripts.html %}
-
-</body>
+    </body>
 
 </html>
