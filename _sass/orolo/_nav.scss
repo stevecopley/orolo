@@ -41,6 +41,10 @@
     #home-link {
         display: none;
     }
+
+    li.home {
+        display: none;
+    }
     
     &.sticking,
     &:not(.nav-home) {
@@ -51,6 +55,10 @@
                 justify-content: flex-start;
                 align-items: center;        
             }
+        }
+
+        li.home {
+            display: block;
         }
     }
 

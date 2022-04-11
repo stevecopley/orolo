@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Influential Books and Authors
+title:  Influential Books and Authors
 ---
 
 {% capture part1 %}

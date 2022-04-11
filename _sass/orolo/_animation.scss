@@ -1,26 +1,18 @@
-$transition-fast: all  500ms ease !default;
-$transition-slow: all 1000ms ease !default;
+$start-instant:   0000ms;
+$start-logo:      2000ms;
+$start-title:     2250ms;
+$start-desc:      2500ms;
+$start-menu:      3000ms;
+$start-scroll:    3250ms;
+$start-wiggle:    3750ms;
 
-$start-logo:   2000ms;
-$start-title:  2500ms;
-$start-desc:   3000ms;
-$start-menu:   3500ms;
-$start-scroll: 3500ms;
-$start-wiggle: 4000ms;
-
-$fast:   500ms;
-$slow:  1000ms;
-$vslow: 1500ms;
+$speed-fast:      0250ms;
+$speed-slow:      0500ms;
+$speed-very-slow: 1000ms;
 
 
 a {
-    -webkit-transition: $transition-fast;
-    transition: $transition-fast;
-}
-
-h2 {
-    -webkit-transition: $transition-slow;
-    transition: $transition-slow;
+    transition: background-position $speed-slow ease;
 }
 
 @keyframes fadein {
@@ -90,48 +82,55 @@ h2 {
     #site-logo {
         position: relative;
         top: 3rem;
-        animation: moveup $vslow forwards $start-logo;
+        animation: moveup $speed-very-slow forwards $start-logo;
 
         @media screen and (min-width: $medium) {
             top: 0;
             left: 6rem;
-            animation: moveleft $vslow forwards $start-logo;
+            animation: moveleft $speed-very-slow forwards $start-logo;
         }
     }
 
     #site-title,
-    #site-description,
-    #scroll-down {
+    #site-description {
         position: relative;
         opacity: 0;
     }
 
     #site-title {
-        animation: fadein $slow forwards $start-title, moveup $slow forwards $start-title;
+        animation: fadein $speed-slow forwards $start-title, moveup $speed-slow forwards $start-title;
 
         @media screen and (min-width: $medium) {
-            animation: fadein $slow forwards $start-title, moveleft $slow forwards $start-title;
+            animation: fadein $speed-slow forwards $start-title, moveleft $speed-slow forwards $start-title;
         }
     }
 
     #site-description {
-        animation: fadein $slow forwards $start-desc, moveup $slow forwards $start-desc;
+        animation: fadein $speed-slow forwards $start-desc, moveup $speed-slow forwards $start-desc;
 
         @media screen and (min-width: $medium) {
-            animation: fadein $slow forwards $start-desc, moveleft $slow forwards $start-desc;
+            animation: fadein $speed-slow forwards $start-desc, moveleft $speed-slow forwards $start-desc;
         }
     }
 }
 
 
 #scroll-down {
-    animation: fadein $fast forwards $start-scroll, wiggle $fast forwards $start-wiggle;
+    opacity: 0;
+    position: relative;
+    animation: fadein $speed-fast forwards $start-scroll, wiggle $speed-slow forwards $start-wiggle;
 }
 
 
 #main-nav.nav-home {
     @media screen and (min-width: $medium) {
         opacity: 0;
-        animation: fadein $fast forwards $start-menu;
+        animation: fadein $speed-fast forwards $start-menu;
+
+        &.sticking {
+            opacity: 1;
+            animation: fadein $speed-fast forwards $start-instant;
+        }
+
     }
 }

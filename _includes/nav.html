@@ -11,14 +11,13 @@
     <ul>
         <label for="menu-toggle"><img src="{{ '/assets/images/icon-close.svg' | relative_url }}" alt="menu icon"></label>
 
-        {% if page.layout == "page" %} 
-            <li><a href="/">Home</a></li> 
-        {% endif %}
-        <li><a href="/#about">Who?</a></li>
-        <li><a href="/#teaching">Teach</a></li>
-        <li><a href="/#coding">Code</a></li>
-        <li><a href="/#mtb">Bike</a></li>
-        <li><a href="/books.html">Read</a></li>
+        <li class="home"><a href="/#top">Home</a></li> 
+        
+        <li><a href="/#teaching">Teaching</a></li>
+        <li><a href="/#coding">Coding</a></li>
+        <li><a href="/about.html" {% if page.url == '/about.html' %} class="active" {% endif %} >Who?</a></li>
+        <li><a href="/bikes.html" {% if page.url == '/bikes.html' %} class="active" {% endif %} >Bikes</a></li>
+        <li><a href="/books.html" {% if page.url == '/books.html' %} class="active" {% endif %} >Books</a></li>
     </ul>
 
 </nav>
