@@ -11,7 +11,7 @@ $accent2-tint: #2196f380;
 $back-light:   #eceff1;
 $back-medium:  #455a64;
 $back-dark:    #263238;
-$back-darker:  #13191c;
+$back-darker:  #102027;
 
 $back-body:    #000;
 $back-shade:   #00000080;
@@ -87,9 +87,49 @@ em {
     color: $accent2;
 }
 
-article ul li::marker {
-    color: $accent2;
+article {
+    ul {
+        li::marker {
+            color: $accent2;
+        }
+    }
+
+    dl {
+        dt {
+            color: $accent2;
+        }
+
+        &.timeline {
+            dt {
+                border-left: 4px solid transparent;
+                border-image: linear-gradient(to bottom, $accent1, $accent1);
+                border-image-slice: 1;
+
+                &:first-of-type {
+                    border-image: linear-gradient(to bottom, transparent 50%, $accent1 50%);
+                    border-image-slice: 1;
+                }
+
+                &:last-of-type {
+                    border-image: linear-gradient(to top, transparent 50%, $accent1 50%);
+                    border-image-slice: 1;
+                }
+
+                &::before {
+                    background-color: $back-darker;
+                    border: 4px solid $accent1;
+                }
+            }
+
+            dd {
+                &:not(:last-child) {
+                    border-left: 4px solid $accent1;
+                }
+            }
+        }
+    }
 }
+
 
 main img {
     border-color: $accent2;

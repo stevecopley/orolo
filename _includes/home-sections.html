@@ -14,68 +14,38 @@
 {% endif %}
 
 
-{% if teachHead %}
-<article id="teaching">
-{{ teachHead | markdownify }}
+{% if workHead %}
+<article id="work">
+{{ workHead | markdownify }}
 {% endif %}
 
-    {% if teach1 %} <section> {{ teach1 | markdownify }} </section> {% endif %}
-    {% if teach2 %} <section> {{ teach2 | markdownify }} </section> {% endif %}
-    {% if teach3 %} <section> {{ teach3 | markdownify }} </section> {% endif %}
-    {% if teach4 %} <section> {{ teach4 | markdownify }} </section> {% endif %}
-    {% if teach5 %} <section> {{ teach5 | markdownify }} </section> {% endif %}
+    {% if work1 %} <section> {{ work1 | markdownify }} </section> {% endif %}
+    {% if work2 %} <section> {{ work2 | markdownify }} </section> {% endif %}
+    {% if work3 %} <section> {{ work3 | markdownify }} </section> {% endif %}
+    {% if work4 %} <section> {{ work4 | markdownify }} </section> {% endif %}
+    {% if work5 %} <section> {{ work5 | markdownify }} </section> {% endif %}
 
-{% if teachHead %}
+{% if workHead %}
 </article>
 {% endif %}
 
 
-{% if codeHead %}
-<article id="coding">
-{{ codeHead | markdownify }}
+{% if notWorkHead %}
+<article id="notwork">
+{{ notWorkHead | markdownify }}
 {% endif %}
 
-    {% if code1 %} <section> {{ code1 | markdownify }} </section> {% endif %}
-    {% if code2 %} <section> {{ code2 | markdownify }} </section> {% endif %}
-    {% if code3 %} <section> {{ code3 | markdownify }} </section> {% endif %}
-    {% if code4 %} <section> {{ code4 | markdownify }} </section> {% endif %}
-    {% if code5 %} <section> {{ code5 | markdownify }} </section> {% endif %}
+    {% if notWork1 %} <section> {{ notWork1 | markdownify }} </section> {% endif %}
+    {% if notWork2 %} <section> {{ notWork2 | markdownify }} </section> {% endif %}
+    {% if notWork3 %} <section> {{ notWork3 | markdownify }} </section> {% endif %}
+    {% if notWork4 %} <section> {{ notWork4 | markdownify }} </section> {% endif %}
+    {% if notWork5 %} <section> {{ notWork5 | markdownify }} </section> {% endif %}
 
-{% if codeHead %}
+{% if notWorkHead %}
 </article>
 {% endif %}
 
 
-{% if bikeHead %}
-<article id="bikes">
-{{ bikeHead | markdownify }}
-{% endif %}
-
-    {% if bike1 %} <section> {{ bike1 | markdownify }} </section> {% endif %}
-    {% if bike2 %} <section> {{ bike2 | markdownify }} </section> {% endif %}
-    {% if bike3 %} <section> {{ bike3 | markdownify }} </section> {% endif %}
-    {% if bike4 %} <section> {{ bike4 | markdownify }} </section> {% endif %}
-    {% if bike5 %} <section> {{ bike5 | markdownify }} </section> {% endif %}
-
-{% if bikeHead %}
-</article>
-{% endif %}
-
-
-{% if bookHead %}
-<article id="books">
-{{ bookHead | markdownify }}
-{% endif %}
-
-    {% if book1 %} <section> {{ book1 | markdownify }} </section> {% endif %}
-    {% if book2 %} <section> {{ book2 | markdownify }} </section> {% endif %}
-    {% if book3 %} <section> {{ book3 | markdownify }} </section> {% endif %}
-    {% if book4 %} <section> {{ book4 | markdownify }} </section> {% endif %}
-    {% if book5 %} <section> {{ book5 | markdownify }} </section> {% endif %}
-
-{% if bookHead %}
-</article>
-{% endif %}
 
 
 

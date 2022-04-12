@@ -10,15 +10,13 @@
 
         {% include nav.html %}
 
+        {% if page.layout=='home' %} 
+            {% include more.html %}
+        {% endif %}
+
         <main aria-label="Content">
 
-            <article>
-
-                <h2>{{ page.title }}</h2>
-                
-                {{ content }}
-
-            </article>
+            {{ content }}
 
         </main>
 

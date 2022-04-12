@@ -52,14 +52,15 @@ a {
     font-weight: $bold-font-weight;
 }
 
-article ul {
-    list-style: circle;
-    padding-left: 1.5rem;
 
-    li::marker {
-        content: '✽  ';
+article {
+    dl {
+        dt {
+            font-weight: bold;
+        }
     }
 }
+
 
 #main-header {
     #site-title {

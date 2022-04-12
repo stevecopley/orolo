@@ -1,8 +1,11 @@
 main img {
     border-width: 5px;
     border-style:  solid;
+    margin-left: auto;
+    margin-right: auto;
     
     &.profile {
         border-radius: 100rem;
+        max-width: 18rem;
     }
 }
