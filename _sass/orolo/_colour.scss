@@ -10,8 +10,8 @@ $accent2-tint: #2196f380;
 
 $back-light:   #eceff1;
 $back-medium:  #455a64;
-$back-dark:    #171717;
-$back-darker:  #0f0f0f;
+$back-dark:    #263238;
+$back-darker:  #13191c;
 
 $back-body:    #000;
 $back-shade:   #00000080;
@@ -87,6 +87,13 @@ em {
     color: $accent2;
 }
 
+article ul li::marker {
+    color: $accent2;
+}
+
+main img {
+    border-color: $accent2;
+}
 
 #main-nav {
     background-color: $back-panel;
@@ -114,7 +121,7 @@ em {
 
     a {
         text-decoration: none;
-        border-bottom: 5px solid transparent;
+        border-bottom: 4px solid transparent;
 
         &:hover,
         &:active,
@@ -126,9 +133,16 @@ em {
     }
 }
 
+main > article,
+#main-footer {
+    border-top: 4px solid;
+    border-image-slice: 1;
+    border-top-width: 4px;
+    border-image-source: linear-gradient(to right, $accent2, $accent1, $accent2);
+}
+
 main > article {
     background: $back-dark;
-    border-top: 5px solid $accent2;
 
     &:nth-of-type( even ) {
         background: $back-darker;
@@ -137,7 +151,6 @@ main > article {
 
 #main-footer {
     color: $text-dull;
-    border-top: 5px solid $accent2;
 
     a {
         text-decoration: none;

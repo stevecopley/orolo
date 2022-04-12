@@ -1,4 +1,8 @@
-img.profile {
-    border-radius: 100rem;
-    border: 2px solid $text-invert;
+main img {
+    border-width: 5px;
+    border-style:  solid;
+    
+    &.profile {
+        border-radius: 100rem;
+    }
 }
