@@ -91,6 +91,15 @@ em {
 #main-nav {
     background-color: $back-panel;
 
+    @media screen and (min-width: $medium) {
+        background: $back-body;
+        box-shadow: $shadow-large;
+
+        &.sticking {
+            // border-bottom: 3px solid $accent2;
+        }   
+    }
+
     ul {
         background: $back-dark;
 
@@ -115,28 +124,20 @@ em {
             color: $text-invert;
         }
     }
-
-    @media screen and (min-width: $medium) {
-        background: $back-body;
-        box-shadow: $shadow-large;
-
-        &.sticking {
-            // border-bottom: 3px solid $accent2;
-        }   
-    }
 }
 
-
-#teaching {
+main > article {
     background: $back-dark;
-}
+    border-top: 5px solid $accent2;
 
-#coding {
-    background: $back-darker;
+    &:nth-of-type( even ) {
+        background: $back-darker;
+    }
 }
 
 #main-footer {
     color: $text-dull;
+    border-top: 5px solid $accent2;
 
     a {
         text-decoration: none;

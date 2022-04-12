@@ -1,26 +1,42 @@
 window.addEventListener( 'DOMContentLoaded', () => {
 
     // Menu observer - triggered when top pixel of menu scrolls past screen edge
-    let observer = new IntersectionObserver( ( [e] ) => {
-        e.target.classList.toggle( 'sticking', e.intersectionRatio < 1 )
-    },    
-    { threshold: [1] }
+    const nav = document.getElementById( 'main-nav' );
+
+    let observer = new IntersectionObserver( 
+        ( [e] ) => {
+            e.target.classList.toggle( 'sticking', e.intersectionRatio < 1 )
+        },    
+        { threshold: 1 }
     );
     
-    const nav = document.getElementById( 'main-nav' );
     observer.observe( nav );
     
     // Article observers - triggered when articles in view - highlight any menu items
-    observer = new IntersectionObserver( ( [e] ) => {
-        const id = e.target.getAttribute( 'id' );
-        const navItem = document.querySelector( `nav li a[href="/#${id}"]` );
 
-        navItem.classList.toggle( 'active', e.intersectionRatio > 0 );
-    } );
-  
-    // Track all articles that have an `id` applied
-    document.querySelectorAll( 'article[id]' ).forEach( ( article ) => {
-        observer.observe( article );
-    } );
+    const header   = document.getElementById( 'main-header' );
+    const articles = document.querySelectorAll( 'article[id]' );
+    const navItems = document.querySelectorAll( '#main-nav a' );
+
+    observer = new IntersectionObserver( 
+        ( [e] ) => {
+            const id = e.target.getAttribute( 'id' );
+            const navItem = document.querySelector( `nav li a[href="/#${id}"]` );
+
+            console.log( `INTER ${id} ${e.isIntersecting} -> ${navItem}` );
+
+            if( e.isIntersecting ) {
+                navItems.forEach( item => item.classList.remove( 'active' ) );
+                navItem.classList.add( 'active' );
+            }
+            else {
+                navItem.classList.remove( 'active' );
+            }
+        },
+        { threshold: 0.7 }
+     );
+
+    observer.observe( header );
+    articles.forEach( ( article ) => observer.observe( article ) );
 
 } );

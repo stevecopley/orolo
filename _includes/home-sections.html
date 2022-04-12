@@ -1,6 +1,23 @@
-<article id="teaching">
+{% if aboutHead %}
+<article id="about">
+{{ aboutHead | markdownify }}
+{% endif %}
 
-    <h2>I Teach</h2>
+    {% if about1 %} <section> {{ about1 | markdownify }} </section> {% endif %}
+    {% if about2 %} <section> {{ about2 | markdownify }} </section> {% endif %}
+    {% if about3 %} <section> {{ about3 | markdownify }} </section> {% endif %}
+    {% if about4 %} <section> {{ about4 | markdownify }} </section> {% endif %}
+    {% if about5 %} <section> {{ about5 | markdownify }} </section> {% endif %}
+
+{% if aboutHead %}
+</article>
+{% endif %}
+
+
+{% if teachHead %}
+<article id="teaching">
+{{ teachHead | markdownify }}
+{% endif %}
 
     {% if teach1 %} <section> {{ teach1 | markdownify }} </section> {% endif %}
     {% if teach2 %} <section> {{ teach2 | markdownify }} </section> {% endif %}
@@ -8,12 +25,15 @@
     {% if teach4 %} <section> {{ teach4 | markdownify }} </section> {% endif %}
     {% if teach5 %} <section> {{ teach5 | markdownify }} </section> {% endif %}
 
+{% if teachHead %}
 </article>
+{% endif %}
 
 
+{% if codeHead %}
 <article id="coding">
-
-    <h2>I Code</h2>
+{{ codeHead | markdownify }}
+{% endif %}
 
     {% if code1 %} <section> {{ code1 | markdownify }} </section> {% endif %}
     {% if code2 %} <section> {{ code2 | markdownify }} </section> {% endif %}
@@ -21,4 +41,41 @@
     {% if code4 %} <section> {{ code4 | markdownify }} </section> {% endif %}
     {% if code5 %} <section> {{ code5 | markdownify }} </section> {% endif %}
 
+{% if codeHead %}
 </article>
+{% endif %}
+
+
+{% if bikeHead %}
+<article id="bikes">
+{{ bikeHead | markdownify }}
+{% endif %}
+
+    {% if bike1 %} <section> {{ bike1 | markdownify }} </section> {% endif %}
+    {% if bike2 %} <section> {{ bike2 | markdownify }} </section> {% endif %}
+    {% if bike3 %} <section> {{ bike3 | markdownify }} </section> {% endif %}
+    {% if bike4 %} <section> {{ bike4 | markdownify }} </section> {% endif %}
+    {% if bike5 %} <section> {{ bike5 | markdownify }} </section> {% endif %}
+
+{% if bikeHead %}
+</article>
+{% endif %}
+
+
+{% if bookHead %}
+<article id="books">
+{{ bookHead | markdownify }}
+{% endif %}
+
+    {% if book1 %} <section> {{ book1 | markdownify }} </section> {% endif %}
+    {% if book2 %} <section> {{ book2 | markdownify }} </section> {% endif %}
+    {% if book3 %} <section> {{ book3 | markdownify }} </section> {% endif %}
+    {% if book4 %} <section> {{ book4 | markdownify }} </section> {% endif %}
+    {% if book5 %} <section> {{ book5 | markdownify }} </section> {% endif %}
+
+{% if bookHead %}
+</article>
+{% endif %}
+
+
+

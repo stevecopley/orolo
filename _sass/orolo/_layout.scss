@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
 }
 
-#welcome {
+#main-header {
     height: 4rem;
     padding: 0.5rem 1rem;
 
@@ -12,6 +12,10 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+
+    @media screen and (min-width: $large) {
+        display: none;
+    }
 
     #site-logo,
     #site-title,
@@ -51,9 +55,16 @@ body {
         justify-content: center;
         gap: 5vh;
         
+        @media screen and (min-width: $large) {
+            display: flex;
+            height: calc(85vh - 2rem);
+            padding-top: 5vh;
+        }
+        
         #site-logo {
             width: 75%;
             max-width: 50vh;
+            min-height: 50vh;
             height: auto;
         
             @media screen and (min-width: $medium) {
@@ -81,16 +92,6 @@ body {
                 top: 5vh;
             }
         }
-        
-        @media screen and (min-width: $large) {
-            display: flex;
-            height: calc(85vh - 2rem);
-            padding-top: 5vh;
-        }
-    }
-
-    @media screen and (min-width: $large) {
-        display: none;
     }
 }
 
@@ -124,6 +125,15 @@ main {
         flex-direction: column;
         gap: 2rem;
 
+        @media screen and (min-width: $medium) {
+            padding: 3rem 2rem;
+
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
         h2 {
             width: 100%;
             margin-bottom: 0;
@@ -133,15 +143,6 @@ main {
             flex: 1;
             min-width: 30ch;
             max-width: 40ch;
-        }
-
-        @media screen and (min-width: $medium) {
-            padding: 3rem 2rem;
-
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 3rem;
         }
     }
 

@@ -11,13 +11,15 @@
     <ul>
         <label for="menu-toggle"><img src="{{ '/assets/images/icon-close.svg' | relative_url }}" alt="menu icon"></label>
 
-        <li class="home"><a href="/#top">Home</a></li> 
+        <li class="home"><a href="/#main-header">Home</a></li> 
         
+        <li><a href="/#about">About</a></li>
         <li><a href="/#teaching">Teaching</a></li>
         <li><a href="/#coding">Coding</a></li>
-        <li><a href="/about.html" {% if page.url == '/about.html' %} class="active" {% endif %} >Who?</a></li>
-        <li><a href="/bikes.html" {% if page.url == '/bikes.html' %} class="active" {% endif %} >Bikes</a></li>
-        <li><a href="/books.html" {% if page.url == '/books.html' %} class="active" {% endif %} >Books</a></li>
+        <li><a href="/#bikes">Bikes</a></li>
+        <li><a href="/#books">Books</a></li>
+
+        <li><a href="/blog.html" {% if page.url == '/blog.html' %} class="active" {% endif %} >Thoughts</a></li>
     </ul>
 
 </nav>
