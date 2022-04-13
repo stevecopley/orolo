@@ -11,13 +11,19 @@
     <ul>
         <label for="menu-toggle"><img src="{{ '/assets/images/icon-close.svg' | relative_url }}" alt="menu icon"></label>
 
-        <li class="home"><a href="/#main-header">Home</a></li> 
-        
-        <li><a href="/#about">Hello</a></li>
-        <li><a href="/#work">Work</a></li>
-        <li><a href="/#notwork">Not Work</a></li>
+        {% for item in site.data.nav %}
 
-        <li><a href="/blog.html" {% if page.url == '/blog.html' %} class="active" {% endif %} >Thoughts</a></li>
+            <li {% if item.name == 'Home' %} class="home" {% endif %}>
+
+                <a href="{{ item.link }}{% if item.id %}#{{ item.id }}{% endif %}"
+                   {% if item.link == page.url %} class="active" {% endif %} >
+
+                    {{ item.name }}
+                    
+                </a>
+            </li>
+
+        {% endfor %}
     </ul>
 
 </nav>

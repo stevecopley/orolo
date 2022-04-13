@@ -33,7 +33,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
                 navItem.classList.remove( 'active' );
             }
         },
-        { threshold: 0.7 }
+        { threshold: 0.75 }
      );
 
     observer.observe( header );
