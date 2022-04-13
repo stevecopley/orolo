@@ -1,7 +1,7 @@
 article {
     ul {
         list-style: circle;
-        padding-left: 1.5rem;
+        padding-left: 2rem;
 
         li {
             &:not(:last-of-type) {
@@ -9,7 +9,7 @@ article {
             }
 
             &::marker {
-                content: '✽  ';
+                content: '✽   ';
             }
         }
     }
