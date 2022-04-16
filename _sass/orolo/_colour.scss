@@ -124,7 +124,7 @@ em {
 #main-menu > label {
     background-color: $back-panel;
 
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $large) {
         background-color: transparent;
     }
 }

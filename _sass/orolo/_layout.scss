@@ -132,10 +132,24 @@ main article {
     }
 
     &#gallery {
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 3rem 0.5rem;
 
-        section {
-            max-width: 30ch;
+        h2 {
+            padding-bottom: 0.5rem;
+        }
+
+        @media screen and (min-width: $medium) {
+            padding: 3rem 2rem;
+
+            h2 {
+                padding-bottom: 1.5rem;
+            }
+    
+            section {
+                min-width: 35ch;
+                max-width: 35ch;
+            }
         }
     }
 }

@@ -13,6 +13,11 @@
   image: screen-history.png
   desc:  A timeline of computing history from the early 20th Century onwards (a WIP)
 
+- name:  Gist List
+  link:  https://github.com/stevecopley/gist-list
+  image: screen-gists.png
+  desc:  A viewer for a GitHub user's gists that makes them easy to browse, filter, sort, etc.
+
 - name:  Binary
   link:  https://github.com/stevecopley/binary
   image: screen-binary.png
@@ -28,11 +33,6 @@
   image: screen-vignere.png
   desc:  Simulations of historic and modern cryptography (Pigpen, Caesar, Vignere, Public-Key)
   
-- name:  Gist List
-  link:  https://github.com/stevecopley/gist-list
-  image: screen-gists.png
-  desc:  A viewer for a GitHub user's gists that makes them easy to browse, filter, sort, etc.
-
 - name:  Slides
   link:  https://github.com/stevecopley/slides
   image: screen-slides.png
@@ -48,29 +48,23 @@
   image: screen-avatar.png
   desc:  Generates a unique SVG avatar based on the hash of a given id
 
-- name:  'Class Demo: Booking'
-  link:  https://github.com/waimea-cpy/demo-bookings
-  image: screen-bookings.png
-  desc:  A demo site showing how a simple booking site could work (PHP and MySQL)
+- name:  'Class Demo: Photos'
+  link:  https://github.com/waimea-cpy/demo-photos
+  image: screen-photos.png
+  desc:  A demo site showing how a simple image uploading site could work (PHP and MySQL)
 
 - name:  'Class Demo: Forum'
   link:  https://github.com/waimea-cpy/demo-forum
   image: screen-forum.png
   desc:  A demo site showing how a simple message forum could work (PHP and MySQL)
 
+- name:  'Class Demo: Booking'
+  link:  https://github.com/waimea-cpy/demo-bookings
+  image: screen-bookings.png
+  desc:  A demo site showing how a simple booking site could work (PHP and MySQL)
+
 - name:  'Class Demo: Orders'
   link:  https://github.com/waimea-cpy/demo-orders
   image: screen-orders.png
   desc:  A demo site showing how a simple ordering system could work (PHP and MySQL)
-
-- name:  'Class Demo: Photos'
-  link:  https://github.com/waimea-cpy/demo-photos
-  image: screen-photos.png
-  desc:  A demo site showing how a simple image uploading site could work (PHP and MySQL)
-
-
-
-
-
-
 

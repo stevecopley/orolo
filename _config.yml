@@ -5,7 +5,5 @@ owner:       "Steve Copley"
 address:     "Nelson, NZ"
 email:       "steve@orolo.dev"
 
-logo:        "analemma-pinkblue.svg"
-
 markdown:    kramdown
 

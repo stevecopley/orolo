@@ -19,7 +19,7 @@ I'm a teacher of Digital Technologies, living with my family in the beautiful an
 
 I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital Learning Co-ordinator and also Teacher in Charge of Digital Technologies, helping students in Years 9 to 13 learn to code, be creative and love technology.
 
-(If you want to know a bit more, read [my bio](/bio.html))
+(If you want to know more, see [my bio](/bio.html))
 
 {% endcapture %}
 
@@ -68,8 +68,6 @@ I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital L
 At Waimea College, as a teacher of Digital Tecnologies, I teach various courses covering programming in a range of languages including Scratch, Python, and Java; interactive website development using HTML, CSS, JavaScript, PHP and MySQL; and various aspects of Design Theory.
 
 My Digital Tech. server supports my teaching, providing a central repository for notes and resources, as well as being a shared development server for my students.
-
-![DT server homepage](assets/gallery/screen-dt.png)
 
 {% endcapture %}
 
