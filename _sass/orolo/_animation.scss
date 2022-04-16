@@ -78,42 +78,39 @@ a {
 }
 
 
-#main-header.home {
-    #site-logo {
-        position: relative;
-        top: 3rem;
-        animation: moveup $speed-very-slow forwards $start-logo;
+#site-logo {
+    position: relative;
+    top: 3rem;
+    animation: moveup $speed-very-slow forwards $start-logo;
 
-        @media screen and (min-width: $medium) {
-            top: 0;
-            left: 6rem;
-            animation: moveleft $speed-very-slow forwards $start-logo;
-        }
-    }
-
-    #site-title,
-    #site-description {
-        position: relative;
-        opacity: 0;
-    }
-
-    #site-title {
-        animation: fadein $speed-slow forwards $start-title, moveup $speed-slow forwards $start-title;
-
-        @media screen and (min-width: $medium) {
-            animation: fadein $speed-slow forwards $start-title, moveleft $speed-slow forwards $start-title;
-        }
-    }
-
-    #site-description {
-        animation: fadein $speed-slow forwards $start-desc, moveup $speed-slow forwards $start-desc;
-
-        @media screen and (min-width: $medium) {
-            animation: fadein $speed-slow forwards $start-desc, moveleft $speed-slow forwards $start-desc;
-        }
+    @media screen and (min-width: $medium) {
+        top: 0;
+        left: 6rem;
+        animation: moveleft $speed-very-slow forwards $start-logo;
     }
 }
 
+#site-title,
+#site-description {
+    position: relative;
+    opacity: 0;
+}
+
+#site-title {
+    animation: fadein $speed-slow forwards $start-title, moveup $speed-slow forwards $start-title;
+
+    @media screen and (min-width: $medium) {
+        animation: fadein $speed-slow forwards $start-title, moveleft $speed-slow forwards $start-title;
+    }
+}
+
+#site-description {
+    animation: fadein $speed-slow forwards $start-desc, moveup $speed-slow forwards $start-desc;
+
+    @media screen and (min-width: $medium) {
+        animation: fadein $speed-slow forwards $start-desc, moveleft $speed-slow forwards $start-desc;
+    }
+}
 
 #scroll-down {
     opacity: 0;
@@ -132,5 +129,14 @@ a {
             animation: fadein $speed-fast forwards $start-instant;
         }
 
+    }
+}
+
+
+article { 
+    figure {
+        figcaption {
+            transition: all $speed-fast ease;
+        }
     }
 }

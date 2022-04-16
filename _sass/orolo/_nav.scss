@@ -1,32 +1,15 @@
-#menu-toggle {
-    display: none;
-}
 
 #main-nav {
-    position: fixed;
-    right: 0.5rem;
-    top: 0.5rem;
-    
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 5rem;
-    
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-
-    z-index: 999;
+    justify-content: space-between;
+    height: 2.5rem;
+    padding: 0.25rem 1rem;
 
     @media screen and (min-width: $large) {
         position: sticky;
         top: 0;
-        left: 0;
-        width: 100%;
-        height: 2.5rem;
-        padding: 0.25rem 1rem;
-        border-radius: 0;
-        justify-content: space-between;
+        z-index: 999;
 
         &.nav-home {
             top: -1px;
@@ -38,11 +21,76 @@
             }
         }
     }
+}
+
+
+#home-link {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;   
+
+    .nav-home & {
+        display: none;
+    }
+
+    @media screen and (min-width: $large) {
+        .sticking & {
+            display: flex;
+        }
+    }
+}
+
+
+#menu-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#menu-title {
+    margin: 0;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+#main-menu {
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    z-index: 999;
+
+    @media screen and (min-width: $large) {
+        position: static;
+        width: auto;
+        border-radius: 0;
+    }
+
 
     label {
         display: block;
-        text-align: right;
         line-height: 1;
+
+        @media screen and (min-width: $large) {
+            display: none;
+        }
+    }
+
+    & > label {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media screen and (min-width: $large) {
             display: none;
@@ -53,34 +101,9 @@
         display: none;
     }
 
-    
     a {
         display: flex;
         padding: 0.15em 0 0;
-    }
-
-    #home-link {
-        display: none;
-    }
-
-    li.home {
-        display: none;
-    }
-    
-    &.sticking,
-    &:not(.nav-home) {
-        #home-link {
-            @media screen and (min-width: $large) {
-                display: flex;
-                gap: 1rem;
-                justify-content: flex-start;
-                align-items: center;        
-            }
-        }
-
-        li.home {
-            display: block;
-        }
     }
 
     ul {
@@ -111,19 +134,20 @@
             left: 0;
         }
 
-        li {
-            display: block;
-        }
-
+                    
         label::before {
             content: ' ';
             display: block;
             position: fixed;
             top: 0;
             left: 0;
-            right: 0;
+            right: 10rem;
             bottom: 0;
-            z-index: -99;
+            z-index: -1;
+        }
+
+        li {
+            display: block;
         }
     }
 
@@ -134,15 +158,6 @@
             display: flex;
         }
     }
-}
-
-#menu-logo {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-#menu-title {
-    margin: 0;
 }
 
 

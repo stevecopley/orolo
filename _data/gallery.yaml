@@ -1,0 +1,76 @@
+- name:  DT Server
+  link:  https://dt.waimea.school.nz
+  image: screen-dt.png
+  desc:  'The Waimea College Digital Technologies server - DT resources and a shared development server (note: geo-blocked to Aus/NZ)'
+
+- name:  IGCSE ICT
+  link:  https://igcseict.info
+  image: screen-igcseict.png
+  desc:  Notes and resources for Cambridge International Exams IGCSE ICT (has not been updated for quite a while)
+
+- name:  Computing History
+  link:  https://github.com/stevecopley/history
+  image: screen-history.png
+  desc:  A timeline of computing history from the early 20th Century onwards (a WIP)
+
+- name:  Binary
+  link:  https://github.com/stevecopley/binary
+  image: screen-binary.png
+  desc:  An interactive binary number explorer, displaying various representations of the value
+
+- name:  Logic Circuit Simulator
+  link:  https://github.com/stevecopley/logic
+  image: screen-logic.png
+  desc:  Drag and drop logic circuit simulator
+
+- name:  Encryption Explorer
+  link:  https://github.com/stevecopley/encryption
+  image: screen-vignere.png
+  desc:  Simulations of historic and modern cryptography (Pigpen, Caesar, Vignere, Public-Key)
+  
+- name:  Gist List
+  link:  https://github.com/stevecopley/gist-list
+  image: screen-gists.png
+  desc:  A viewer for a GitHub user's gists that makes them easy to browse, filter, sort, etc.
+
+- name:  Slides
+  link:  https://github.com/stevecopley/slides
+  image: screen-slides.png
+  desc:  An HTML/CSS slideshow using a Markdown file as the slide content source
+
+- name:  WOPR
+  link:  https://github.com/stevecopley/wopr
+  image: screen-wopr.png
+  desc:  A re-creation of the WOPR terminal command-line interface from the 80s film, War Games
+
+- name:  SVG Avatar Creator
+  link:  https://github.com/stevecopley/avatar
+  image: screen-avatar.png
+  desc:  Generates a unique SVG avatar based on the hash of a given id
+
+- name:  Class Demo - Bookings
+  link:  https://github.com/waimea-cpy/demo-bookings
+  image: screen-bookings.png
+  desc:  A demo site showing how a simple booking site could work (PHP and MySQL)
+
+- name:  Class Demo - Forum
+  link:  https://github.com/waimea-cpy/demo-forum
+  image: screen-forum.png
+  desc:  A demo site showing how a simple message forum could work (PHP and MySQL)
+
+- name:  Class Demo - Orders
+  link:  https://github.com/waimea-cpy/demo-orders
+  image: screen-orders.png
+  desc:  A demo site showing how a simple ordering system could work (PHP and MySQL)
+
+- name:  Class Demo - Photos
+  link:  https://github.com/waimea-cpy/demo-photos
+  image: screen-photos.png
+  desc:  A demo site showing how a simple image uploading site could work (PHP and MySQL)
+
+
+
+
+
+
+

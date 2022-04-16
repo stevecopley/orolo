@@ -13,6 +13,7 @@
 </article>
 {% endif %}
 
+{% comment %} --------------------------------------------------------------- {% endcomment %}
 
 {% if workHead %}
 <article id="work">
@@ -29,6 +30,32 @@
 </article>
 {% endif %}
 
+{% comment %} --------------------------------------------------------------- {% endcomment %}
+
+{% if galleryHead %}
+<article id="gallery">
+{{ galleryHead | markdownify }}
+{% endif %}
+
+{% for item in site.data.gallery %}
+    <section>
+        <figure>
+            <a href="{{ item.link }}">
+                <img src="{{ 'assets/gallery/' | append: item.image | relative_url }}" alt="Screenshot of {{ item.name }}">
+                <figcaption>
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.desc }}</p>
+                </figcaption>
+            </a>
+        </figure>
+    </section>
+{% endfor %}
+
+{% if galleryHead %}
+</article>
+{% endif %}
+
+{% comment %} --------------------------------------------------------------- {% endcomment %}
 
 {% if notWorkHead %}
 <article id="notwork">
@@ -45,7 +72,5 @@
 </article>
 {% endif %}
 
-
-
-
+{% comment %} --------------------------------------------------------------- {% endcomment %}
 

@@ -1,7 +1,3 @@
-- name: Home
-  link: /
-  id:   main-header
-
 - name: Hello
   link: /
   id:   about
@@ -9,6 +5,10 @@
 - name: Work
   link: /
   id:   work
+
+- name: Portfolio
+  link: /
+  id:   gallery
 
 - name: Not Work
   link: /

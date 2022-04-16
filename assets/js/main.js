@@ -14,14 +14,16 @@ window.addEventListener( 'DOMContentLoaded', () => {
     
     // Article observers - triggered when articles in view - highlight any menu items
 
-    const header   = document.getElementById( 'main-header' );
+    // const header   = document.getElementById( 'main-header' );
     const articles = document.querySelectorAll( 'article[id]' );
-    const navItems = document.querySelectorAll( '#main-nav a' );
+    const navItems = document.querySelectorAll( '#main-menu a.internal' );
+
+    navItems.forEach( item => item.classList.remove( 'active' ) );
 
     observer = new IntersectionObserver( 
         ( [e] ) => {
             const id = e.target.getAttribute( 'id' );
-            const navItem = document.querySelector( `nav li a[href="/#${id}"]` );
+            const navItem = document.querySelector( `#main-menu a[href="/#${id}"]` );
 
             console.log( `INTER ${id} ${e.isIntersecting} -> ${navItem}` );
 
@@ -33,10 +35,10 @@ window.addEventListener( 'DOMContentLoaded', () => {
                 navItem.classList.remove( 'active' );
             }
         },
-        { threshold: 0.75 }
+        { threshold: 0.25 }
      );
 
-    observer.observe( header );
+    // if( header ) observer.observe( header );
     articles.forEach( ( article ) => observer.observe( article ) );
 
 } );

@@ -67,7 +67,7 @@ I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital L
 
 At Waimea College, as a teacher of Digital Tecnologies, I teach various courses covering programming in a range of languages including Scratch, Python, and Java; interactive website development using HTML, CSS, JavaScript, PHP and MySQL; and various aspects of Design Theory.
 
-I have a server which supports my teaching, providing a central repository for notes and resources, as well as being a shared development server for my students.
+My Digital Tech. server supports my teaching, providing a central repository for notes and resources, as well as being a shared development server for my students.
 
 ![DT server homepage](assets/gallery/screen-dt.png)
 
@@ -81,6 +81,16 @@ I have a server which supports my teaching, providing a central repository for n
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
+
+{% endcapture %}
+
+
+
+{% comment %} --------------------------------------------------------------- {% endcomment %}
+
+{% capture galleryHead %}
+
+## Portfolio
 
 {% endcapture %}
 

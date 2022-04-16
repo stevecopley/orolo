@@ -5,25 +5,29 @@
         <h1 id="menu-title">{{ site.title }}</h1> 
     </a>
 
-    <label for="menu-toggle"><img src="{{ '/assets/images/icon-menu.svg' | relative_url }}" alt="menu icon"></label>
-    <input id="menu-toggle" type="checkbox">
+    <div id="main-menu">
+        <label for="menu-toggle"><img src="{{ '/assets/icons/icon-menu.svg' | relative_url }}" alt="menu icon"></label>
+        <input id="menu-toggle" type="checkbox">
 
-    <ul>
-        <label for="menu-toggle"><img src="{{ '/assets/images/icon-close.svg' | relative_url }}" alt="menu icon"></label>
+        <ul>
+            <label for="menu-toggle"><img src="{{ '/assets/icons/icon-close.svg' | relative_url }}" alt="menu icon"></label>
 
-        {% for item in site.data.nav %}
+            {% for item in site.data.nav %}
 
-            <li {% if item.name == 'Home' %} class="home" {% endif %}>
+                <li>
 
-                <a href="{{ item.link }}{% if item.id %}#{{ item.id }}{% endif %}"
-                   {% if item.link == page.url %} class="active" {% endif %} >
+                    <a href="{{ item.link }}{% if item.id %}#{{ item.id }}{% endif %}"
+                       class="
+                            {% if item.link == '/' %} internal {% endif %}
+                            {% if item.link == page.url %} active {% endif %}
+                       " >
 
-                    {{ item.name }}
-                    
-                </a>
-            </li>
+                        {{ item.name }}
+                        
+                    </a>
+                </li>
 
-        {% endfor %}
-    </ul>
-
+            {% endfor %}
+        </ul>
+    </div>
 </nav>
