@@ -135,22 +135,37 @@ article {
         outline-color: $back-body;
     }
 
-    figure {
-        figcaption {
+    &#gallery {
+        section {
             background-color: $back-panel;
 
-            h3 {
-                color: $text-invert;
+            @media (hover: hover) and (pointer: fine) {
+                background-color: initial;
+            }
+
+            figure {
+    
+                figcaption {
+                    @media (hover: hover) and (pointer: fine) {
+                        background-color: $back-panel;
+                    }
+                }
+        
+                h3 {
+                    color: $text-invert;
+                }
+        
+                a:hover {
+                    color: $text-invert;
+                    -webkit-text-fill-color: $text-invert;
+                    -mov-text-fill-color: $text-invert;
+                }
             }
         }
-
-        a:hover {
-            color: $text-invert;
-            -webkit-text-fill-color: $text-invert;
-            -mov-text-fill-color: $text-invert;
-        }
     }
+}
 
+article {
     ul {
         li::marker {
             color: $accent2;

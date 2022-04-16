@@ -93,49 +93,53 @@ body {
 main {
     flex: 1;
 
-    article {
-        width: 100%;
-        margin: 0 auto;
-        padding: 3rem 1rem;
-
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        @media screen and (min-width: $medium) {
-            padding: 3rem 2rem;
-
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 3rem;
-        }
-
-        h2 {
-            width: 100%;
-            margin-bottom: 0;
-        }
-
-        section {
-            flex: 1;
-            min-width: 30ch;
-            max-width: 40ch;
-        }
-
-        &#gallery {
-            gap: 1rem;
-
-            section {
-                max-width: 35ch;
-            }
-        }
-    }
-
     &.fullpage {
         width: 100%;
         padding: 3rem 1rem;
     }
 }
+
+main article {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (min-width: $medium) {
+        padding: 3rem 2rem;
+
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    h2 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    section {
+        flex: 1;
+        min-width: 30ch;
+        max-width: 40ch;
+        justify-self: center;
+    }
+
+    &#gallery {
+        gap: 1rem;
+
+        section {
+            max-width: 30ch;
+        }
+    }
+}
+
 
 
 #main-footer {
