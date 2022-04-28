@@ -20,6 +20,8 @@ $back-panel:   #000000d0;
 $shadow-small: 0 0.10rem 0.2rem $back-shade;
 $shadow-large: 0 0.25rem 0.5rem $back-shade;
 
+$blur:         7px;
+
 
 body {
     color: $text-invert;
@@ -89,10 +91,13 @@ em {
 
 
 #main-nav {
-    background-color: $back-body;
+    background-color: $back-shade;
 
     @media screen and (min-width: $medium) {
         box-shadow: $shadow-large;
+        -webkit-backdrop-filter: blur( $blur );
+        backdrop-filter: blur( $blur );
+        border-bottom: 2px solid $back-panel;
     }
 
     ul {
@@ -104,12 +109,14 @@ em {
 
         label::before {
             background-color: $back-shade;
+            -webkit-backdrop-filter: blur( $blur );
+            backdrop-filter: blur( $blur );
         }
     }
 
     a {
         text-decoration: none;
-        border-bottom: 4px solid transparent;
+        border-bottom: 2px solid transparent;
 
         &:hover,
         &:active,

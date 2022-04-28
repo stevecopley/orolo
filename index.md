@@ -33,9 +33,9 @@ I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital L
   - Coffee (black, strong!)
   - Beautiful code
   - Swimming in a river
-  - Being creative
   - Learning new things
   - Climbing hills
+  - Creating neat things
   - Reading great books
   - Teaching people stuff
   - Peace and quiet

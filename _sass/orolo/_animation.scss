@@ -121,6 +121,7 @@ a {
 
 #main-nav.nav-home {
     @media screen and (min-width: $medium) {
+
         opacity: 0;
         animation: fadein $speed-fast forwards $start-menu;
 
@@ -132,11 +133,40 @@ a {
     }
 }
 
+#main-menu {
+    @media screen and (min-width: $large) {
+
+        transition: margin-right $speed-fast, transform $speed-fast;
+
+        .nav-home.sticking & {
+            margin-right: 0;
+            transform: translateX( 0 );
+        }
+    }
+}
+
+#home-link {
+    @media screen and (min-width: $large) {
+
+        transition: opacity $speed-fast;
+
+        .nav-home.sticking & {
+            opacity: 1;
+            margin-left: 0;
+        }
+    }
+}
 
 article { 
+
     figure {
         figcaption {
             transition: all $speed-fast ease;
         }
+    }
+
+    section {
+        opacity: calc((var(--scroll) * 0.8) + 0.2);
+        transform: scale( calc((var(--scroll) * 0.1) + 0.9) );
     }
 }

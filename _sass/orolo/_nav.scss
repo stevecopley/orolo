@@ -2,7 +2,7 @@
 #main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 2.5rem;
     padding: 0.25rem 1rem;
 
@@ -17,7 +17,7 @@
             padding-top: calc(0.25rem + 1px);
             
             &:not(.sticking) {
-                justify-content: center;
+                // justify-content: center;
             }
         }
     }
@@ -35,9 +35,20 @@
     }
 
     @media screen and (min-width: $large) {
-        .sticking & {
+        .nav-home & {
             display: flex;
+            pointer-events: none;
+            opacity: 0;
+            margin-left: -100%;
         }
+    
+        .sticking & {
+            pointer-events: initial;
+        }
+    }
+
+    h1 {
+        padding-top: 0.3rem;
     }
 }
 
@@ -72,8 +83,14 @@
         position: static;
         width: auto;
         border-radius: 0;
-    }
+        margin-left: auto;
+        margin-right: 0;
 
+        .nav-home & {
+            margin-right: 50%;
+            transform: translateX( 50% );
+        }
+    }
 
     label {
         display: block;
