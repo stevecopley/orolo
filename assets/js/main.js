@@ -60,21 +60,18 @@ window.addEventListener( 'DOMContentLoaded', () => {
 
     articles.forEach( ( article ) => observer.observe( article ) );
 
-
     // Scroller listener to enable css animations
-    window.addEventListener( 'scroll', () => {
+
+    function updateScroll() {
         document.body.style.setProperty(       '--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight) || 1 );
         if( header ) header.style.setProperty( '--scroll', Math.min( window.pageYOffset / header.offsetHeight, 1 ) );
         if( header )    nav.style.setProperty( '--scroll', Math.min( window.pageYOffset / header.offsetHeight, 1 ) );
         articles.forEach( ( article ) => article.style.setProperty( '--scroll', scrolledIntoView( article ) ) );
         sections.forEach( ( section ) => section.style.setProperty( '--scroll', scrolledIntoView( section ) ) );
-    }, false);
+    }
 
-    document.body.style.setProperty(       '--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight) || 1 );
-    if( header ) header.style.setProperty( '--scroll', Math.min( window.pageYOffset / header.offsetHeight, 1 ) );
-    if( header )    nav.style.setProperty( '--scroll', Math.min( window.pageYOffset / header.offsetHeight, 1 ) );
-    articles.forEach( ( article ) => article.style.setProperty( '--scroll', scrolledIntoView( article ) ) );
-    sections.forEach( ( section ) => section.style.setProperty( '--scroll', scrolledIntoView( section ) ) );
+    updateScroll();
 
+    window.addEventListener( 'scroll', updateScroll, false);
     
 } );

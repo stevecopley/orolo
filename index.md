@@ -13,11 +13,11 @@ layout: home
 
 {% capture about1 %}
 
-### Hello, I'm Steve Copley
+### I'm Steve Copley
 
-I'm a teacher of Digital Technologies, living with my family in the beautiful and sunny town of [Nelson](https://www.nelsontasman.nz) at the top of the South Island of New Zealand.
+I'm a school teacher, living with my family in the beautiful and sunny town of [Nelson](https://www.nelsontasman.nz) at the top of the South Island of New Zealand.
 
-I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital Learning Co-ordinator and also Teacher in Charge of Digital Technologies, helping students in Years 9 to 13 learn to code, be creative and love technology.
+I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital Learning Co-ordinator and also Teacher in Charge of Digital Technologies, helping students learn to code, be creative and love technology.
 
 (If you want to know more, see [my bio](/bio.html))
 
@@ -29,15 +29,12 @@ I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital L
 
   - My family
   - Riding my bike
-  - Sunshine
+  - Sunshine, rivers, hills
   - Coffee (black, strong!)
+  - Creating stuff
+  - Teaching and learning
   - Beautiful code
-  - Swimming in a river
-  - Learning new things
-  - Climbing hills
-  - Creating neat things
-  - Reading great books
-  - Teaching people stuff
+  - Reading, podcasts and movies 
   - Peace and quiet
 
 {% endcapture %}
@@ -65,7 +62,7 @@ I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital L
 
 ### I Teach
 
-At Waimea College, as a teacher of Digital Tecnologies, I teach various courses covering programming in a range of languages including Scratch, Python, and Java; interactive website development using HTML, CSS, JavaScript, PHP and MySQL; and various aspects of Design Theory.
+As a teacher of Digital Tecnologies, I teach various courses covering programming in a range of languages including Scratch, Python, and Kotlin; website development using HTML, CSS, JavaScript, PHP and MySQL; aspects of Design Theory; and interesting Computer Science topics.
 
 My Digital Tech. server supports my teaching, providing a central repository for notes and resources, as well as being a shared development server for my students.
 
@@ -88,7 +85,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture galleryHead %}
 
-## Portfolio
+## Things I've Made
 
 {% endcapture %}
 
