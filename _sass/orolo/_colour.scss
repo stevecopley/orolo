@@ -13,9 +13,10 @@ $back-medium:  #455a64;
 $back-dark:    #102027;
 $back-darker:  #000a12;
 
-$back-body:    #000;
-$back-shade:   #00000080;
-$back-panel:   #000000d0;
+$back-body:       #000;
+$back-shade:      #00000080;
+$back-panel:      #000000d0;
+$back-panel-dark: #000000f0;
 
 $shadow-small: 0 0.10rem 0.2rem $back-shade;
 $shadow-large: 0 0.25rem 0.5rem $back-shade;
@@ -63,12 +64,12 @@ a {
         text-decoration-color: $accent1;
 
         background-color: $accent2;
-        background-image: linear-gradient(to left, 
-                                          $text-invert 0%, 
-                                          $text-invert 34%, 
-                                          $accent1     44%, 
-                                          $accent1     56%, 
-                                          $accent2     66%, 
+        background-image: linear-gradient(to left,
+                                          $text-invert 0%,
+                                          $text-invert 34%,
+                                          $accent1     44%,
+                                          $accent1     56%,
+                                          $accent2     66%,
                                           $accent2     100%);
         background-size: 300%;
         -webkit-background-clip: text;
@@ -155,30 +156,33 @@ article {
         outline-color: $back-body;
     }
 
-    &#gallery {
-        section {
+    section.gallery {
+        @media (hover: hover) and (pointer: fine) {
+            background-color: initial;
+        }
+
+        figure {
             background-color: $back-panel;
 
-            @media (hover: hover) and (pointer: fine) {
-                background-color: initial;
+            figcaption {
+                @media (hover: hover) and (pointer: fine) {
+                    background-color: $back-panel;
+                }
             }
 
-            figure {
-    
+            h3 {
+                color: $text-invert;
+            }
+
+            a:hover {
+                color: $text-invert;
+                -webkit-text-fill-color: $text-invert;
+                -mov-text-fill-color: $text-invert;
+
                 figcaption {
                     @media (hover: hover) and (pointer: fine) {
-                        background-color: $back-panel;
+                        background-color: $back-panel-dark;
                     }
-                }
-        
-                h3 {
-                    color: $text-invert;
-                }
-        
-                a:hover {
-                    color: $text-invert;
-                    -webkit-text-fill-color: $text-invert;
-                    -mov-text-fill-color: $text-invert;
                 }
             }
         }

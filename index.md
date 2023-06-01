@@ -6,45 +6,33 @@ layout: home
 
 {% capture aboutHead %}
 
-## Hello, There!
+## Kia Ora!
 
 {% endcapture %}
 
 
 {% capture about1 %}
 
-### I'm Steve Copley
+### I'm Steve Copley...
 
-I'm a school teacher, living with my family in the beautiful and sunny town of [Nelson](https://www.nelsontasman.nz) at the top of the South Island of New Zealand.
+Father, teacher, mountain biker, nerd.
 
-I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital Learning Co-ordinator and also Teacher in Charge of Digital Technologies, helping students learn to code, be creative and love technology.
+I love coffee, bikes, creating things, adventures in the hills, lie-ins, video games and good books.
 
-(If you want to know more, see [my bio](/bio.html))
+I Live in [Nelson](https://www.nelsontasman.nz) at the top of the South Island of New Zealand, and I work at [Waimea College](https://www.waimea.school.nz) as the Digital Learning Co-ordinator and Teacher in Charge of Digital Technologies. My full [bio is here](/bio.html).
 
 {% endcapture %}
 
 {% capture about2 %}
 
-### Things that Make Me Happy
-
-  - My family
-  - Riding my bike
-  - Sunshine, rivers, hills
-  - Coffee (black, strong!)
-  - Creating stuff
-  - Teaching and learning
-  - Beautiful code
-  - Reading, podcasts and movies 
-  - Peace and quiet
+![Steve](assets/images/steve-square.jpg){:.profile}
 
 {% endcapture %}
 
 
-{% capture about3 %}
+{% capture aboutFoot %}
 
-![Steve](assets/images/steve-square.jpg){:.profile}
-
-#### Father, teacher, mountain biker, nerd!
+It's nice to meet you.
 
 {% endcapture %}
 
@@ -53,29 +41,28 @@ I work at [Waimea College](https://www.waimea.school.nz) where I'm the Digital L
 
 {% capture workHead %}
 
-## Work
+## I Teach
 
 {% endcapture %}
 
 
 {% capture work1 %}
 
-### I Teach
+At work you will find me teaching Digital Technologies to students in Years 9 through to 13.
 
-As a teacher of Digital Tecnologies, I teach various courses covering programming in a range of languages including Scratch, Python, and Kotlin; website development using HTML, CSS, JavaScript, PHP and MySQL; aspects of Design Theory; and interesting Computer Science topics.
-
-My Digital Tech. server supports my teaching, providing a central repository for notes and resources, as well as being a shared development server for my students.
+I love my job; it's great fun trying to pass on my enthusiasm for nerdy things.
 
 {% endcapture %}
 
 
 {% capture work2 %}
 
-### I Code
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
+- Programming (Scratch, Python, JS, Kotlin, etc.)
+- Front-end web development (HTML, CSS, JS)
+- Back-end web development (PHP, MySQL)
+- Computer Science theory
+- Design theory
+- Simple animation
 
 {% endcapture %}
 
@@ -83,9 +70,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% comment %} --------------------------------------------------------------- {% endcomment %}
 
-{% capture galleryHead %}
+{% capture galleryCodeHead %}
 
-## Things I've Made
+## I Code
+
+I code up solutions to problems now and then, as well a creating resources for my teaching. You can find me on GitHub: [@waimea-cpy](https://github.com/waimea-cpy) for work stuff, and [@stevecopley](https://github.com/stevecopley) for personal projects. Don't go looking there for pro-level code - it's all written by someone who barely knows what he's doing!
+
+Here are a few projects I've worked on recently...
+
+{% endcapture %}
+
+
+
+{% comment %} --------------------------------------------------------------- {% endcomment %}
+
+{% capture galleryWebHead %}
+
+## I Web
+
+I've designed and coded a lot of websites over the years (the first I can remember running for friends was back in 1998).
+
+Today, these are the sites that I actively maintain...
 
 {% endcapture %}
 
@@ -95,7 +100,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture notWorkHead %}
 
-## Not Work
+## I Also
 
 {% endcapture %}
 
@@ -112,15 +117,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {% capture notWork2 %}
 
 ### I Read Books
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
-
-{% endcapture %}
-
-
-{% capture notWork3 %}
-
-### I Code
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus.
 

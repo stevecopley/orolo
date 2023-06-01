@@ -2,13 +2,17 @@
   link: /
   id:   about
 
-- name: Work
+- name: Teaching
   link: /
   id:   work
 
-- name: Things
+- name: Coding
   link: /
-  id:   gallery
+  id:   gallery-code
+
+- name: Websites
+  link: /
+  id:   gallery-web
 
 - name: Not Work
   link: /
@@ -16,4 +20,4 @@
 
 - name: Thoughts
   link: /blog.html
-  id: 
+  id:

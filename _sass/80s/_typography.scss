@@ -1,11 +1,12 @@
-$font-family: 'Heebo', 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-family: 'Geologica', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-heading: 'Silkscreen', monospace, !default;
 
 $base-font-size: 20px;
 
-$light-font-weight:  100 !default;
-$normal-font-weight: 200 !default;
-$bold-font-weight:   300 !default;
-$heavy-font-weight:  500 !default;
+$light-font-weight:  300 !default;
+$normal-font-weight: 400 !default;
+$bold-font-weight:   600 !default;
+$heavy-font-weight:  800 !default;
 
 
 html {
@@ -16,11 +17,12 @@ html {
     text-rendering: optimizeLegibility; /* enable common ligatures and kerning */
 }
 
-h1         { font-weight: $light-font-weight; }
-h2, h3     { font-weight: $heavy-font-weight; }
-h4, h5, h6 { font-weight: $bold-font-weight; }
+h1         { font-weight: $normal-font-weight; }
+h2, h3     { font-weight: $normal-font-weight; }
+h4, h5, h6 { font-weight: $normal-font-weight; }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
     line-height: 1;
 }
 
@@ -52,6 +54,13 @@ a {
     font-weight: $bold-font-weight;
 }
 
+em {
+    font-style: normal;
+}
+
+strong {
+    font-weight: $heavy-font-weight;
+}
 
 article {
     figure {

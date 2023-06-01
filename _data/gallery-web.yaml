@@ -1,0 +1,40 @@
+- name:  Waimea College DT Server
+  link:  https://dt.waimea.school.nz
+  image: screen-dt.png
+  desc:  'The Waimea College Digital Technologies server - DT resources and a shared development server (note: geo-blocked to Aus/NZ)'
+
+- name:  IGCSE ICT Info
+  link:  https://igcseict.info
+  image: screen-igcseict.png
+  desc:  Notes and resources for Cambridge International Exams IGCSE ICT (has not been updated for quite a while)
+
+- name:  Waimea College ICT Tips
+  link:  https://dt.waimea.school.nz/tips
+  image: screen-tips.png
+  desc:  'Tips and tricks for Waimea College staff to use in their teaching (note: geo-blocked to Aus/NZ)'
+
+# - name:  Computing History
+#   link:  https://github.com/stevecopley/history
+#   image: screen-history.png
+#   desc:  A timeline of computing history from the early 20th Century onwards (a WIP)
+
+# - name:  'Class Demo: Photos'
+#   link:  https://github.com/waimea-cpy/demo-photos
+#   image: screen-photos.png
+#   desc:  A demo site showing how a simple image uploading site could work (PHP and MySQL)
+
+# - name:  'Class Demo: Forum'
+#   link:  https://github.com/waimea-cpy/demo-forum
+#   image: screen-forum.png
+#   desc:  A demo site showing how a simple message forum could work (PHP and MySQL)
+
+# - name:  'Class Demo: Booking'
+#   link:  https://github.com/waimea-cpy/demo-bookings
+#   image: screen-bookings.png
+#   desc:  A demo site showing how a simple booking site could work (PHP and MySQL)
+
+# - name:  'Class Demo: Orders'
+#   link:  https://github.com/waimea-cpy/demo-orders
+#   image: screen-orders.png
+#   desc:  A demo site showing how a simple ordering system could work (PHP and MySQL)
+

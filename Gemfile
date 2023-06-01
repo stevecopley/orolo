@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # gem 'jekyll', '~> 4.2.2'
-gem 'jekyll', '~> 4.3.1'
+gem 'jekyll', '~> 4.3.2'
 
 # For Windows auto-rebuild
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?

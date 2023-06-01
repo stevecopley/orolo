@@ -1,0 +1,49 @@
+- name:  Gist List Viewer
+  link:  https://github.com/stevecopley/gist-list
+  image: screen-gists.png
+  desc:  A viewer for a GitHub user's gists that makes them easy to browse, filter, sort, etc.
+
+- name:  Cryptography Demos
+  link:  https://github.com/stevecopley/encryption
+  image: screen-vignere.png
+  desc:  Simulations of historic and modern cryptography (Pigpen, Caesar, Vignere, Public-Key)
+
+- name:  Binary Numbers
+  link:  https://github.com/stevecopley/binary
+  image: screen-binary.png
+  desc:  An interactive binary number explorer, displaying various representations of the value
+
+- name:  Logic Circuits
+  link:  https://github.com/stevecopley/logic
+  image: screen-logic.png
+  desc:  Drag and drop logic circuit simulator
+
+- name:  Quiz
+  link:  https://github.com/stevecopley/quiz
+  image: screen-quiz.png
+  desc:  Presents quizzes based on markdown files that can contain code snippets, flowcharts, etc.
+
+- name:  Kotlin Kolour
+  link:  https://github.com/stevecopley/kotlin-kolour
+  image: kotlin-kolour.png
+  desc:  Small Kotlin library to enable colour text output to the terminal
+
+- name:  WOPR Sim
+  link:  https://github.com/stevecopley/wopr
+  image: screen-wopr.png
+  desc:  A re-creation of the WOPR terminal command-line interface from the 80s film, War Games
+
+- name:  Waimea College Daily Notices
+  link:  https://waimea.school.nz
+  image: screen-notices.png
+  desc:  Daily notices are pulled from the school LMS (KAMAR) for easy display and perusal
+
+# - name:  Slides
+#   link:  https://github.com/stevecopley/slides
+#   image: screen-slides.png
+#   desc:  An HTML/CSS slideshow using a Markdown file as the slide content source
+
+# - name:  SVG Avatar Creator
+#   link:  https://github.com/stevecopley/avatar
+#   image: screen-avatar.png
+#   desc:  Generates a unique SVG avatar based on the hash of a given id

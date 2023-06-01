@@ -118,10 +118,10 @@ main article {
     }
 
     @media screen and (min-width: $xlarge) {
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: auto 1fr;
-        padding-left:  max(3rem, calc((100vw - $xxlarge - 3rem) / 2));
-        padding-right: max(3rem, calc((100vw - $xxlarge - 3rem) / 2));
+        // grid-template-columns: 1fr 2fr 2fr;
+        // grid-template-rows: auto 1fr;
+        // padding-left:  max(3rem, calc((100vw - $xxlarge - 3rem) / 2));
+        // padding-right: max(3rem, calc((100vw - $xxlarge - 3rem) / 2));
     }
 
     & > section {
@@ -148,12 +148,12 @@ main article {
         }
 
         @media screen and (min-width: $xlarge) {
-            grid-column: span 1;
-            justify-self: start;
+            // grid-column: span 1;
+            // justify-self: start;
 
-            & > * {
-                text-align: left;
-            }
+            // & > * {
+            //     text-align: left;
+            // }
         }
     }
 

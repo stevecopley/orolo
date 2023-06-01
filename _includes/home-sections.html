@@ -1,6 +1,8 @@
 {% if aboutHead %}
 <article id="about">
-{{ aboutHead | markdownify }}
+    <header>
+        {{ aboutHead | markdownify }}
+    </header>
 {% endif %}
 
     {% if about1 %} <section> {{ about1 | markdownify }} </section> {% endif %}
@@ -8,6 +10,12 @@
     {% if about3 %} <section> {{ about3 | markdownify }} </section> {% endif %}
     {% if about4 %} <section> {{ about4 | markdownify }} </section> {% endif %}
     {% if about5 %} <section> {{ about5 | markdownify }} </section> {% endif %}
+
+    {% if aboutFoot %}
+    <footer>
+        {{ aboutFoot | markdownify }}
+    </footer>
+    {% endif %}
 
 {% if aboutHead %}
 </article>
@@ -17,7 +25,9 @@
 
 {% if workHead %}
 <article id="work">
-{{ workHead | markdownify }}
+    <header>
+        {{ workHead | markdownify }}
+    </header>
 {% endif %}
 
     {% if work1 %} <section> {{ work1 | markdownify }} </section> {% endif %}
@@ -26,19 +36,27 @@
     {% if work4 %} <section> {{ work4 | markdownify }} </section> {% endif %}
     {% if work5 %} <section> {{ work5 | markdownify }} </section> {% endif %}
 
+    {% if workFoot %}
+    <footer>
+        {{ workFoot | markdownify }}
+    </footer>
+    {% endif %}
+
 {% if workHead %}
 </article>
 {% endif %}
 
 {% comment %} --------------------------------------------------------------- {% endcomment %}
 
-{% if galleryHead %}
-<article id="gallery">
-{{ galleryHead | markdownify }}
+{% if galleryCodeHead %}
+<article id="gallery-code">
+    <header>
+        {{ galleryCodeHead | markdownify }}
+    </header>
 {% endif %}
 
-{% for item in site.data.gallery %}
-    <section>
+    <section class="gallery">
+    {% for item in site.data.gallery-code %}
         <figure>
             <a href="{{ item.link }}">
                 <img src="{{ 'assets/gallery/' | append: item.image | relative_url }}" alt="Screenshot of {{ item.name }}">
@@ -48,10 +66,49 @@
                 </figcaption>
             </a>
         </figure>
+    {% endfor %}
     </section>
-{% endfor %}
 
-{% if galleryHead %}
+    {% if galleryCodeFoot %}
+    <footer>
+        {{ galleryCodeFoot | markdownify }}
+    </footer>
+    {% endif %}
+
+{% if galleryCodeHead %}
+</article>
+{% endif %}
+
+{% comment %} --------------------------------------------------------------- {% endcomment %}
+
+{% if galleryWebHead %}
+<article id="gallery-web">
+    <header>
+        {{ galleryWebHead | markdownify }}
+    </header>
+{% endif %}
+
+    <section class="gallery">
+    {% for item in site.data.gallery-web %}
+        <figure>
+            <a href="{{ item.link }}">
+                <img src="{{ 'assets/gallery/' | append: item.image | relative_url }}" alt="Screenshot of {{ item.name }}">
+                <figcaption>
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.desc }}</p>
+                </figcaption>
+            </a>
+        </figure>
+    {% endfor %}
+    </section>
+
+    {% if galleryWebFoot %}
+    <footer>
+        {{ galleryWebFoot | markdownify }}
+    </footer>
+    {% endif %}
+
+{% if galleryWebHead %}
 </article>
 {% endif %}
 
@@ -59,7 +116,9 @@
 
 {% if notWorkHead %}
 <article id="notwork">
-{{ notWorkHead | markdownify }}
+    <header>
+        {{ notWorkHead | markdownify }}
+    </header>
 {% endif %}
 
     {% if notWork1 %} <section> {{ notWork1 | markdownify }} </section> {% endif %}
@@ -67,6 +126,12 @@
     {% if notWork3 %} <section> {{ notWork3 | markdownify }} </section> {% endif %}
     {% if notWork4 %} <section> {{ notWork4 | markdownify }} </section> {% endif %}
     {% if notWork5 %} <section> {{ notWork5 | markdownify }} </section> {% endif %}
+
+    {% if notWorkFoot %}
+    <footer>
+        {{ notWorkFoot | markdownify }}
+    </footer>
+    {% endif %}
 
 {% if notWorkHead %}
 </article>

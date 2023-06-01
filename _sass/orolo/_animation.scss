@@ -157,7 +157,7 @@ a {
     }
 }
 
-article { 
+article {
 
     figure {
         figcaption {
@@ -165,8 +165,8 @@ article {
         }
     }
 
-    section {
-        opacity: calc((var(--scroll) * 0.8) + 0.2);
-        transform: scale( calc((var(--scroll) * 0.1) + 0.9) );
+    section, header {
+        // opacity: calc((var(--scroll, 1.0) * 0.8) + 0.2);
+        // transform: scale( calc((var(--scroll, 1.0) * 0.1) + 0.9) );
     }
 }
