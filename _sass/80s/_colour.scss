@@ -1,57 +1,58 @@
 // Palette from http://androidarts.com/palette/16pal.htm
 
-$colour-black:       #000000;
-$colour-grey:        #9D9D9D;
-$colour-white:       #FFFFFF;
+// $colour-black:       #000000;
+// $colour-grey:        #9D9D9D;
+// $colour-white:       #FFFFFF;
 
-$colour-red:         #BE2633;
-$colour-pink:        #E06F8B;
+// $colour-red:         #BE2633;
+// $colour-pink:        #E06F8B;
 
-$colour-brown-dark:  #493C2B;
-$colour-brown:       #A46422;
-$colour-orange:      #EB8931;
-$colour-yellow:      #F7E26B;
+// $colour-brown-dark:  #493C2B;
+// $colour-brown:       #A46422;
+// $colour-orange:      #EB8931;
+// $colour-yellow:      #F7E26B;
 
-$colour-green-dark:  #2F484E;
-$colour-green:       #44891A;
-$colour-green-acid:  #A3CE27;
+// $colour-green-dark:  #2F484E;
+// $colour-green:       #44891A;
+// $colour-green-acid:  #A3CE27;
 
-$colour-blue-dark:   #1B2632;
-$colour-blue:        #005784;
-$colour-blue-light:  #31A2F2;
-$colour-blue-pale:   #B2DCEF;
+// $colour-blue-dark:   #1B2632;
+// $colour-blue:        #005784;
+// $colour-blue-light:  #31A2F2;
+// $colour-blue-pale:   #B2DCEF;
 
 
 // Palette from https://lospec.com/palette-list/pico-8
 
-// $colour-black:       #000000;
-// $colour-grey:        #C2C3C7;
-// $colour-white:       #FFF1E8;
+$colour-black:       #000000;
+$colour-grey:        #C2C3C7;
+$colour-white:       #FFF1E8;
 
-// $colour-red:         #FF004D;
-// $colour-pink:        #FF77A8;
-// $colour-purple:      #7E2553;
-// $colour-lilac:       #83769C;
+$colour-red:         #FF004D;
+$colour-pink:        #FF77A8;
+$colour-purple:      #7E2553;
+$colour-lilac:       #83769C;
 
-// $colour-brown-dark:  #5F574F;
-// $colour-brown:       #AB5236;
-// $colour-orange:      #FFA300;
-// $colour-yellow:      #FFEC27;
-// $colour-orange-pale: #FFCCAA;
+$colour-brown-dark:  #5F574F;
+$colour-brown:       #AB5236;
+$colour-orange:      #FFA300;
+$colour-yellow:      #FFEC27;
+$colour-orange-pale: #FFCCAA;
 
-// $colour-green-dark:  #008751;
-// $colour-green:       #00E436;
+$colour-green-dark:  #008751;
+$colour-green:       #00E436;
 
-// $colour-blue-dark:   #1D2B53;
-// $colour-blue-light:  #29ADFF;
+$colour-blue-dark:   #1D2B53;
+$colour-blue-light:  #29ADFF;
 
 
 $text-colour:  $colour-white;
+$text-invert:  $colour-black;
 
-$accent1:      $colour-green-acid;
+$accent1:      $colour-blue-light;
 $accent2:      $colour-yellow;
 
-$back-colour:  $colour-blue-dark;
+$back-colour:  $colour-lilac;
 
 $shadow-small: 0 0.10rem 0.2rem $back-colour;
 $shadow-large: 0 0.25rem 0.5rem $back-colour;
@@ -80,14 +81,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-    background-color: $colour-blue;
+    background-color: $colour-blue-light;
 }
 
 main > article {
-    background-color: $colour-blue;
+    background-color: $colour-blue-light;
 
     &:nth-of-type( even ) {
         background-color: $colour-pink;
+    }
+
+    & > header {
+        background-color: $accent2;
+
+        & > h2 {
+            color: $text-invert;
+        }
+    }
+
+    img {
+        box-shadow: 8px 8px 0 8px #333366;
+        outline-color: #fff;
+    }
+
+    section {
+        background-color: #000;
     }
 }
 

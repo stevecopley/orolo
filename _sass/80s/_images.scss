@@ -1,12 +1,12 @@
 article {
     img {
-        outline-width: 2px;
+        outline-width: 8px;
         outline-style: solid;
         margin-left: auto;
         margin-right: auto;
 
         &.profile {
-            border-radius: 100rem;
+            // border-radius: 100rem;
             max-width: 16rem;
         }
     }
