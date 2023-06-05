@@ -79,3 +79,4 @@ window.addEventListener( 'DOMContentLoaded', () => {
     // window.addEventListener( 'scroll', updateScroll, false);
 
 } );
+

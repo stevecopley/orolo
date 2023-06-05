@@ -1,0 +1,77 @@
+$button-close:  #FF4E54;
+$button-min:    #FBC522;
+$button-max:    #00DC3E;
+
+$window-back:   #000;
+$window-shadow: #2b4079;
+
+.window {
+    padding: $gap-medium $gap-small $gap-small;
+    border-radius: $radius-small;
+    position: relative;
+
+    background-color: $window-back;
+    box-shadow: $gap-tiny $gap-tiny 0 $window-shadow;
+
+    animation: zoom 1000ms;
+
+    &::before {
+        content: url("/assets/images/buttons.svg");
+        position: absolute;
+        top: $gap-tiny;
+        left: $gap-small;
+        width: 60px;
+        line-height: 0;
+    }
+}
+
+
+.typing > :is(p, h1, h2, h3) {
+    color: transparent;
+    position: relative;
+    width: max-content;
+    max-width: 70vw;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    --prompt-colour: transparent;
+    --caret-colour: transparent;
+
+    &.prompt {
+        margin-left: 1em;
+        margin-bottom: 0.7em;
+
+        &:not(:first-child) {
+            margin-top: 0.7em;
+        }
+
+        &::before {
+            content: ">";
+            left: -1em;
+            position: absolute;
+
+            color: var(--prompt-colour);
+        }
+    }
+
+    &::after {
+        content: "";
+
+        display: inline-block;
+        position: relative;
+        left: 0.2em;
+        top: 0.2em;
+        width: 0.5em;
+        height: 1em;
+
+        background-color: var(--caret-colour);
+        animation: blink-caret 500ms infinite;
+    }
+}
+
+
+@keyframes blink-caret {
+    from, to { background-color: transparent }
+    50% { background-color: var(--caret-colour); }
+}

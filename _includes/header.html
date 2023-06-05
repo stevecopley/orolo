@@ -1,15 +1,33 @@
+{% capture fullDescription %}{{ site.description }} {{ site.owner }}{% endcapture %}
+
 <header id="main-header">
 
-    <div id="site-info">
-        <object id="site-logo" type="image/svg+xml" data="{{ '/assets/images/analemma.svg' | relative_url }}"></object>
+    <div id="site-info" class="window">
 
-        <div id="site-text">
+        <div id="site-text" class="typing">
 
             <h1 id="site-title">{{ site.title }}</h1>
 
-            <p id="site-description" itemprop="description">{{ site.description }} <em>{{ site.owner }}</em></p>
+            <p>{{ site.description }} {{ site.owner }}</p>
+
+            <p class="prompt">DRAW GRID</p>
+
+            <p class="prompt">PLOT POINTS</p>
+
+            <p class="prompt">LIST</p>
+
+            <p>- HELLO</p>
+            <p>- TEACHING</p>
+            <p>- CODING</p>
+            <p>- WEBSITES</p>
+            <p>- NOT_WORK</p>
+            <p>- MUSINGS</p>
+
+            <p class="prompt"></p>
 
         </div>
+
+        <img id="site-logo" src="{{ '/assets/images/analemma-pixels-grid.svg' | relative_url }}">
     </div>
 
 </header>

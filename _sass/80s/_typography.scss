@@ -85,18 +85,24 @@ article {
 }
 
 
+#site-info {
+    font-size: 1.25em;
+    font-family: $font-family-heading;
+}
+
+
 #site-title {
     font-size: 2.5em;
+    margin: 0.1em 0 0.3em;
 
     @media screen and (min-width: $medium) {
         font-size: 10vh;
     }
 }
 
-#site-description {
-    font-size: 1.25em;
-}
+#site-text {
 
+}
 
 #main-nav {
     font-size: 1.2rem;

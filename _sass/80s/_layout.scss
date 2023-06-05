@@ -1,3 +1,11 @@
+$gap-tiny:   0.5rem;
+$gap-small:  1.0rem;
+$gap-medium: 2.0rem;
+$gap-large:  3.0rem;
+
+$radius-small: 0.5rem;
+$radius-large: 1rem;
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,8 +13,8 @@ body {
 }
 
 #main-header {
-    height: 80vh;
-    padding-top: 10vh;
+    min-height: 80vh;
+    padding: 10vh 0;
 
     display: flex;
     align-items: center;
@@ -16,19 +24,11 @@ body {
 
     @media screen and (min-width: $large) {
         display: flex;
-        height: calc(85vh - 2rem);
+        min-height: calc(85vh - 2rem);
         padding-top: 5vh;
     }
 }
 
-
-#site-logo,
-#site-title,
-#site-description {
-    z-index: 99;
-    margin: 0;
-    display: block;
-}
 
 #site-logo {
     width: 75%;
@@ -42,34 +42,34 @@ body {
 }
 
 #site-info {
-    width: 100%;
-
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 5vh;
 
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $large) {
         flex-direction: row;
-        gap: 0;
+        // align-items: flex-start;
+        justify-content: space-between;
+        // gap: 0;
     }
 }
 
 
 #site-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 2rem;
+    // align-items: center;
 
-    @media screen and (min-width: $medium) {
-        align-items: flex-end;
-        text-align: right;
-        position: relative;
-        left: -4rem;
-        top: 10vh;
-    }
+    // @media screen and (min-width: $medium) {
+    //     align-items: flex-end;
+    //     text-align: right;
+    //     position: relative;
+    //     left: -4rem;
+    //     top: 10vh;
+    // }
 }
 
 

@@ -1,0 +1,109 @@
+<svg viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+
+    <g id="grid"
+       style="stroke:#fff; stroke-width:3px; fill:none;">
+
+        <line x1="001" y1="000" x2="001" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5000ms" dur="250ms" /> </line>
+        <line x1="050" y1="000" x2="050" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5050ms" dur="250ms" /> </line>
+        <line x1="100" y1="000" x2="100" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5100ms" dur="250ms" /> </line>
+        <line x1="150" y1="000" x2="150" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5150ms" dur="250ms" /> </line>
+        <line x1="200" y1="000" x2="200" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5200ms" dur="250ms" /> </line>
+        <line x1="250" y1="000" x2="250" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5250ms" dur="250ms" /> </line>
+        <line x1="300" y1="000" x2="300" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5300ms" dur="250ms" /> </line>
+        <line x1="350" y1="000" x2="350" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5350ms" dur="250ms" /> </line>
+        <line x1="400" y1="000" x2="400" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5400ms" dur="250ms" /> </line>
+        <line x1="449" y1="000" x2="449" y2="450" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5450ms" dur="250ms" /> </line>
+        <line x1="000" y1="001" x2="450" y2="001" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5500ms" dur="250ms" /> </line>
+        <line x1="000" y1="050" x2="450" y2="050" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5550ms" dur="250ms" /> </line>
+        <line x1="000" y1="100" x2="450" y2="100" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5600ms" dur="250ms" /> </line>
+        <line x1="000" y1="150" x2="450" y2="150" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5650ms" dur="250ms" /> </line>
+        <line x1="000" y1="200" x2="450" y2="200" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5700ms" dur="250ms" /> </line>
+        <line x1="000" y1="250" x2="450" y2="250" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5750ms" dur="250ms" /> </line>
+        <line x1="000" y1="300" x2="450" y2="300" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5800ms" dur="250ms" /> </line>
+        <line x1="000" y1="350" x2="450" y2="350" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5850ms" dur="250ms" /> </line>
+        <line x1="000" y1="400" x2="450" y2="400" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5900ms" dur="250ms" /> </line>
+        <line x1="000" y1="449" x2="450" y2="449" opacity="0"> <animate attributeName="opacity" values="0; 0.5; 0.1" fill="freeze" begin="5950ms" dur="250ms" /> </line>
+    </g>
+
+
+    <g id="analemma"
+       style="stroke:none; fill:#29ADFF;">
+
+        <title>Analemma</title>
+
+        <rect x="426" y="053" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7000ms" dur="250ms" /> </rect>
+        <rect x="424" y="060" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7010ms" dur="250ms" /> </rect>
+        <rect x="417" y="069" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7020ms" dur="250ms" /> </rect>
+        <rect x="408" y="078" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7030ms" dur="250ms" /> </rect>
+        <rect x="395" y="088" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7040ms" dur="250ms" /> </rect>
+        <rect x="379" y="098" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7050ms" dur="250ms" /> </rect>
+        <rect x="361" y="110" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7060ms" dur="250ms" /> </rect>
+        <rect x="341" y="121" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7070ms" dur="250ms" /> </rect>
+        <rect x="320" y="134" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7080ms" dur="250ms" /> </rect>
+        <rect x="298" y="146" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7090ms" dur="250ms" /> </rect>
+        <rect x="276" y="160" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7100ms" dur="250ms" /> </rect>
+        <rect x="253" y="173" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7110ms" dur="250ms" /> </rect>
+        <rect x="230" y="187" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7120ms" dur="250ms" /> </rect>
+        <rect x="207" y="201" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7130ms" dur="250ms" /> </rect>
+        <rect x="185" y="216" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7140ms" dur="250ms" /> </rect>
+        <rect x="164" y="230" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7150ms" dur="250ms" /> </rect>
+        <rect x="144" y="245" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7160ms" dur="250ms" /> </rect>
+        <rect x="126" y="260" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7170ms" dur="250ms" /> </rect>
+        <rect x="108" y="274" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7180ms" dur="250ms" /> </rect>
+        <rect x="092" y="289" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7190ms" dur="250ms" /> </rect>
+        <rect x="078" y="303" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7200ms" dur="250ms" /> </rect>
+        <rect x="065" y="317" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7210ms" dur="250ms" /> </rect>
+        <rect x="053" y="330" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7220ms" dur="250ms" /> </rect>
+        <rect x="043" y="343" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7230ms" dur="250ms" /> </rect>
+        <rect x="034" y="355" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7240ms" dur="250ms" /> </rect>
+        <rect x="028" y="366" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7250ms" dur="250ms" /> </rect>
+        <rect x="022" y="377" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7260ms" dur="250ms" /> </rect>
+        <rect x="017" y="386" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7270ms" dur="250ms" /> </rect>
+        <rect x="015" y="394" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7280ms" dur="250ms" /> </rect>
+        <rect x="013" y="401" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7290ms" dur="250ms" /> </rect>
+        <rect x="013" y="407" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7300ms" dur="250ms" /> </rect>
+        <rect x="014" y="412" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7310ms" dur="250ms" /> </rect>
+        <rect x="016" y="415" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7320ms" dur="250ms" /> </rect>
+        <rect x="019" y="417" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7330ms" dur="250ms" /> </rect>
+        <rect x="023" y="417" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7340ms" dur="250ms" /> </rect>
+        <rect x="027" y="416" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7350ms" dur="250ms" /> </rect>
+        <rect x="031" y="414" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7360ms" dur="250ms" /> </rect>
+        <rect x="036" y="410" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7370ms" dur="250ms" /> </rect>
+        <rect x="041" y="404" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7380ms" dur="250ms" /> </rect>
+        <rect x="047" y="397" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7390ms" dur="250ms" /> </rect>
+        <rect x="051" y="389" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7400ms" dur="250ms" /> </rect>
+        <rect x="057" y="379" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7410ms" dur="250ms" /> </rect>
+        <rect x="062" y="368" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7420ms" dur="250ms" /> </rect>
+        <rect x="067" y="357" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7430ms" dur="250ms" /> </rect>
+        <rect x="071" y="343" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7440ms" dur="250ms" /> </rect>
+        <rect x="076" y="329" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7450ms" dur="250ms" /> </rect>
+        <rect x="081" y="315" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7460ms" dur="250ms" /> </rect>
+        <rect x="085" y="299" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7470ms" dur="250ms" /> </rect>
+        <rect x="089" y="283" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7480ms" dur="250ms" /> </rect>
+        <rect x="093" y="266" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7490ms" dur="250ms" /> </rect>
+        <rect x="098" y="249" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7500ms" dur="250ms" /> </rect>
+        <rect x="103" y="231" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7510ms" dur="250ms" /> </rect>
+        <rect x="107" y="214" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7520ms" dur="250ms" /> </rect>
+        <rect x="113" y="196" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7530ms" dur="250ms" /> </rect>
+        <rect x="120" y="179" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7540ms" dur="250ms" /> </rect>
+        <rect x="127" y="162" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7550ms" dur="250ms" /> </rect>
+        <rect x="136" y="145" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7560ms" dur="250ms" /> </rect>
+        <rect x="146" y="129" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7570ms" dur="250ms" /> </rect>
+        <rect x="159" y="114" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7580ms" dur="250ms" /> </rect>
+        <rect x="173" y="099" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7590ms" dur="250ms" /> </rect>
+        <rect x="190" y="086" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7600ms" dur="250ms" /> </rect>
+        <rect x="208" y="074" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7610ms" dur="250ms" /> </rect>
+        <rect x="229" y="063" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7620ms" dur="250ms" /> </rect>
+        <rect x="252" y="054" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7630ms" dur="250ms" /> </rect>
+        <rect x="276" y="047" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7640ms" dur="250ms" /> </rect>
+        <rect x="300" y="041" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7650ms" dur="250ms" /> </rect>
+        <rect x="325" y="037" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7660ms" dur="250ms" /> </rect>
+        <rect x="349" y="034" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7670ms" dur="250ms" /> </rect>
+        <rect x="371" y="034" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7680ms" dur="250ms" /> </rect>
+        <rect x="390" y="035" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7690ms" dur="250ms" /> </rect>
+        <rect x="405" y="037" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7700ms" dur="250ms" /> </rect>
+        <rect x="416" y="041" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7710ms" dur="250ms" /> </rect>
+        <rect x="423" y="046" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7720ms" dur="250ms" /> </rect>
+        <rect x="423" y="047" width="8" height="8" opacity="0"> <animate attributeName="opacity" values="0; 1.0; 0.8" fill="freeze" begin="7730ms" dur="250ms" /> </rect>
+    </g>
+</svg>
