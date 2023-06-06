@@ -16,18 +16,21 @@
 
             <p class="prompt">LIST</p>
 
-            <p>- HELLO</p>
-            <p>- TEACHING</p>
-            <p>- CODING</p>
-            <p>- WEBSITES</p>
-            <p>- NOT_WORK</p>
-            <p>- MUSINGS</p>
+            {% for item in site.data.nav %}
+
+            <a href="{{ item.link }}{% if item.id %}#{{ item.id }}{% endif %}"
+               class="{% if item.link == '/' %} internal {% endif %}
+                      {% if item.link == page.url %} active {% endif %}" >
+                {{ item.name }}
+            </a>
+
+            {% endfor %}
 
             <p class="prompt"></p>
 
         </div>
 
-        <img id="site-logo" src="{{ '/assets/images/analemma-pixels-grid.svg' | relative_url }}">
+        <!-- <img id="site-logo" src="{{ '/assets/images/analemma-pixels-grid.svg' | relative_url }}"> -->
     </div>
 
 </header>

@@ -1,17 +1,41 @@
 const typingSpeed = 100;
 const displaySpeed = 10;
 
-const initialDelay = 1000;
-const delayBetweenBlocks = 1000;
+const initialDelay = 500;
+const inputDelay = 1000;
+
+const typingFont = new FontFaceObserver( 'Silkscreen' );
+
+typingFont.load().then( () => {
+    console.log('GOT FONT');
+    document.documentElement.classList.add( 'fonts-loaded' );
+    setTimeout( resizeWindows, 1000 );
+} );
 
 const typingElements = document.querySelectorAll( '.typing' );
 
 
+function resizeWindows() {
+    typingElements.forEach( el => {
+        const width = el.clientWidth + 1;  // Need to always round up, so add 1
+        const height = el.clientHeight + 1;  // Need to always round up, so add 1
+        el.style.width = "calc(" + width + "px)";
+        el.style.height = height + "px";
+
+        // const typingBlocks = el.children;
+
+        // for( const block of typingBlocks ) {
+        //     const width = block.clientWidth + 1;  // Need to always round up, so add 1
+        //     const height = block.clientHeight + 1;  // Need to always round up, so add 1
+        //     block.style.width = "calc(" + width + "px)";
+        //     block.style.height = height + "px";
+        // }
+    } );
+}
+
+resizeWindows();
+
 typingElements.forEach( el => {
-    const width = el.clientWidth + 1;  // Need to always round up, so add 1
-    const height = el.clientHeight + 1;  // Need to always round up, so add 1
-    el.style.width = "calc(" + width + "px + 2em)";
-    el.style.height = height + "px";
 
     setTimeout( () => {
         const typingBlocks = el.children;
@@ -22,7 +46,8 @@ typingElements.forEach( el => {
             const text = block.innerText;
             const isUserInput = block.classList.contains( "prompt" );
             const speed = isUserInput ? typingSpeed : displaySpeed;
-            const blockTime = text.length * speed;
+            let blockTime = text.length * speed;
+            blockTime += isUserInput ? inputDelay : 0;
 
             block.style.color = "transparent";
             block.innerHTML = "";
@@ -39,7 +64,7 @@ typingElements.forEach( el => {
                 typeEffect( block, text, speed, isUserInput );
             }, delay );
 
-            delay += blockTime + (isUserInput? delayBetweenBlocks : 0);
+            delay += blockTime;
         }
     }, initialDelay );
 } );
@@ -51,7 +76,7 @@ function typeEffect( element, text, speed, isUserInput ) {
     element.style.setProperty( "--caret-colour", "yellow" );
 
     let i = 0;
-    let pause = 10;
+    let pause = isUserInput ? Math.floor( inputDelay / speed ) : 0;
 
     const timer = setInterval( () => {
         if( pause > 0 ) {
@@ -63,6 +88,11 @@ function typeEffect( element, text, speed, isUserInput ) {
         }
         else {
             clearInterval( timer );
+
+            if( element.tagName == 'A' ) {
+                element.style.textDecoration = "underline";
+            }
+
             // element.style.setProperty( "--caret-colour", "transparent" );
         }
     }, speed );

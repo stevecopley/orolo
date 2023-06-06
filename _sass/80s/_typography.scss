@@ -34,11 +34,11 @@ h5 { font-size: 1.2rem; }
 h6 { font-size: 1.1rem; }
 
 
-:is(h1, h2, h3, h4, h5) {
+:is(h1, h2, h3, h4, h5, h6) {
     margin-bottom: 0.5em;
 }
 
-:is(h1, h2, h3, h4, h5):not(:first-child) {
+:is(h1, h2, h3, h4, h5, h6):not(:first-child) {
     margin-top: 0.75em;
 }
 
@@ -96,7 +96,7 @@ article {
     margin: 0.1em 0 0.3em;
 
     @media screen and (min-width: $medium) {
-        font-size: 10vh;
+        // font-size: 10vh;
     }
 }
 

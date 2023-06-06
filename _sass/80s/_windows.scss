@@ -23,24 +23,38 @@ $window-shadow: #2b4079;
         width: 60px;
         line-height: 0;
     }
+
+    animation: zoom 250ms ease-out;
 }
 
+@keyframes zoom {
+    000% { transform: scale(0.1); }
+    100% { transform: scale(1.0); }
+}
 
-.typing > :is(p, h1, h2, h3) {
+.typing > :is(a, p, h1, h2, h3) {
+    display: block;
     color: transparent;
+    text-decoration: none;
     position: relative;
+
     width: max-content;
     max-width: 70vw;
 
     margin-top: 0;
     margin-bottom: 0;
 
+    font-weight: normal;
+
     --prompt-colour: transparent;
     --caret-colour: transparent;
 
     &.prompt {
         margin-left: 1em;
-        margin-bottom: 0.7em;
+
+        &:not(:last-child) {
+            margin-bottom: 0.7em;
+        }
 
         &:not(:first-child) {
             margin-top: 0.7em;
@@ -53,20 +67,20 @@ $window-shadow: #2b4079;
 
             color: var(--prompt-colour);
         }
-    }
 
-    &::after {
-        content: "";
+        &::after {
+            content: "";
 
-        display: inline-block;
-        position: relative;
-        left: 0.2em;
-        top: 0.2em;
-        width: 0.5em;
-        height: 1em;
+            display: inline-block;
+            position: relative;
+            left: 0.2em;
+            top: 0.2em;
+            width: 0.5em;
+            height: 1em;
 
-        background-color: var(--caret-colour);
-        animation: blink-caret 500ms infinite;
+            background-color: var(--caret-colour);
+            animation: blink-caret 500ms infinite;
+        }
     }
 }
 
