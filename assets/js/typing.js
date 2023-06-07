@@ -9,7 +9,7 @@ const typingFont = new FontFaceObserver( 'Silkscreen' );
 typingFont.load().then( () => {
     console.log('GOT FONT');
     document.documentElement.classList.add( 'fonts-loaded' );
-    setTimeout( resizeWindows, 1000 );
+    resizeWindows();
 } );
 
 const typingElements = document.querySelectorAll( '.typing' );
@@ -19,7 +19,7 @@ function resizeWindows() {
     typingElements.forEach( el => {
         const width = el.clientWidth + 1;  // Need to always round up, so add 1
         const height = el.clientHeight + 1;  // Need to always round up, so add 1
-        el.style.width = "calc(" + width + "px)";
+        // el.style.width = "calc(" + width + "px + 1em)";
         el.style.height = height + "px";
 
         // const typingBlocks = el.children;
@@ -43,28 +43,30 @@ typingElements.forEach( el => {
         let delay = initialDelay;
 
         for( const block of typingBlocks ) {
-            const text = block.innerText;
-            const isUserInput = block.classList.contains( "prompt" );
-            const speed = isUserInput ? typingSpeed : displaySpeed;
-            let blockTime = text.length * speed;
-            blockTime += isUserInput ? inputDelay : 0;
+            if( window.getComputedStyle( block ).display !== "none" ) {
+                const text = block.innerText;
+                const isUserInput = block.classList.contains( "prompt" );
+                const speed = isUserInput ? typingSpeed : displaySpeed;
+                let blockTime = text.length * speed;
+                blockTime += isUserInput ? inputDelay : 0;
 
-            block.style.color = "transparent";
-            block.innerHTML = "";
+                block.style.color = "transparent";
+                block.innerHTML = "";
 
-            if( block == el.firstElementChild ) {
-                block.style.setProperty( "--prompt-colour", "yellow" );
-                block.style.setProperty( "--caret-colour", "yellow" );
-            }
-
-            setTimeout( () => {
-                for( clearBlock of typingBlocks ) {
-                    clearBlock.style.setProperty( "--caret-colour", "transparent" );
+                if( block == el.firstElementChild ) {
+                    block.style.setProperty( "--prompt-colour", "yellow" );
+                    block.style.setProperty( "--caret-colour", "yellow" );
                 }
-                typeEffect( block, text, speed, isUserInput );
-            }, delay );
 
-            delay += blockTime;
+                setTimeout( () => {
+                    for( clearBlock of typingBlocks ) {
+                        clearBlock.style.setProperty( "--caret-colour", "transparent" );
+                    }
+                    typeEffect( block, text, speed, isUserInput );
+                }, delay );
+
+                delay += blockTime;
+            }
         }
     }, initialDelay );
 } );

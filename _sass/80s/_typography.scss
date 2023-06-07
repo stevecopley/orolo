@@ -92,11 +92,11 @@ article {
 
 
 #site-title {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0.1em 0 0.3em;
 
     @media screen and (min-width: $medium) {
-        // font-size: 10vh;
+        font-size: 2.5em;
     }
 }
 

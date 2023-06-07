@@ -6,6 +6,12 @@ $window-back:   #000;
 $window-shadow: #2b4079;
 
 .window {
+    width: 100%;
+
+    @media screen and (min-width: $medium) {
+        width: auto;
+    }
+
     padding: $gap-medium $gap-small $gap-small;
     border-radius: $radius-small;
     position: relative;
@@ -13,7 +19,7 @@ $window-shadow: #2b4079;
     background-color: $window-back;
     box-shadow: $gap-tiny $gap-tiny 0 $window-shadow;
 
-    animation: zoom 1000ms;
+    // animation: zoom 1000ms;
 
     &::before {
         content: url("/assets/images/buttons.svg");
@@ -24,12 +30,25 @@ $window-shadow: #2b4079;
         line-height: 0;
     }
 
-    animation: zoom 250ms ease-out;
+    transform: scale(0);
+    animation: zoom 250ms ease-out forwards;
+
+    &[data-zoom-delay] {
+        animation-delay: 4000ms;
+    }
+
+    &.optional {
+        display: none;
+
+        @media screen and (min-width: $medium) {
+            display: block;
+        }
+    }
 }
 
 @keyframes zoom {
-    000% { transform: scale(0.1); }
-    100% { transform: scale(1.0); }
+    000% { transform: scale(0); }
+    100% { transform: scale(1); }
 }
 
 .typing > :is(a, p, h1, h2, h3) {
@@ -38,8 +57,8 @@ $window-shadow: #2b4079;
     text-decoration: none;
     position: relative;
 
-    width: max-content;
-    max-width: 70vw;
+    // width: max-content;
+    // max-width: 70vw;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -48,6 +67,14 @@ $window-shadow: #2b4079;
 
     --prompt-colour: transparent;
     --caret-colour: transparent;
+
+    &.optional {
+        display: none;
+
+        @media screen and (min-width: $medium) {
+            display: block;
+        }
+    }
 
     &.prompt {
         margin-left: 1em;
@@ -81,6 +108,10 @@ $window-shadow: #2b4079;
             background-color: var(--caret-colour);
             animation: blink-caret 500ms infinite;
         }
+    }
+
+    &.output {
+        margin-left: 1em;
     }
 }
 

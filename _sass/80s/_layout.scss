@@ -14,62 +14,32 @@ body {
 
 #main-header {
     min-height: 80vh;
-    padding: 10vh 0;
+    padding: $gap-medium $gap-small;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 5vh;
-
-    @media screen and (min-width: $large) {
-        display: flex;
-        min-height: calc(85vh - 2rem);
-        padding-top: 5vh;
-    }
-}
-
-
-#site-logo {
-    width: 75%;
-    max-width: 50vh;
-    min-height: 50vh;
-    height: auto;
 
     @media screen and (min-width: $medium) {
-        max-height: 50vh;
-    }
-}
-
-#site-info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vh;
-
-    @media screen and (min-width: $large) {
         flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-        // gap: 0;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        min-height: calc(85vh - 2rem);
+        padding: 5vh $gap-medium;
     }
 }
 
 
-#site-text {
-    // display: flex;
-    // flex-direction: column;
-    // gap: 2rem;
-    // align-items: center;
+#main-header > * {
+    @media screen and (min-width: $large) {
+        max-width: 40ch;
+    }
+}
 
-    // @media screen and (min-width: $medium) {
-    //     align-items: flex-end;
-    //     text-align: right;
-    //     position: relative;
-    //     left: -4rem;
-    //     top: 10vh;
-    // }
+#site-logo {
+    width: 100%;
 }
 
 

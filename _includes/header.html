@@ -2,35 +2,35 @@
 
 <header id="main-header">
 
-    <div id="site-info" class="window">
+    <div id="site-info" class="window typing">
 
-        <div id="site-text" class="typing">
+        <h1 id="site-title">{{ site.title }}</h1>
 
-            <h1 id="site-title">{{ site.title }}</h1>
+        <p>{{ site.description }} {{ site.owner }}</p>
 
-            <p>{{ site.description }} {{ site.owner }}</p>
+        <p class="prompt">LIST</p>
 
-            <p class="prompt">DRAW GRID</p>
+        {% for item in site.data.nav %}
 
-            <p class="prompt">PLOT POINTS</p>
+        <a href="{{ item.link }}{% if item.id %}#{{ item.id }}{% endif %}"
+            class="output
+                    {% if item.link == '/' %} internal {% endif %}
+                    {% if item.link == page.url %} active {% endif %}" >
+            {{ item.name }}
+        </a>
 
-            <p class="prompt">LIST</p>
+        {% endfor %}
 
-            {% for item in site.data.nav %}
+        <p class="prompt optional">DRAW GRID</p>
 
-            <a href="{{ item.link }}{% if item.id %}#{{ item.id }}{% endif %}"
-               class="{% if item.link == '/' %} internal {% endif %}
-                      {% if item.link == page.url %} active {% endif %}" >
-                {{ item.name }}
-            </a>
+        <p class="prompt optional">PLOT POINTS</p>
 
-            {% endfor %}
+        <p class="prompt"></p>
 
-            <p class="prompt"></p>
+    </div>
 
-        </div>
-
-        <!-- <img id="site-logo" src="{{ '/assets/images/analemma-pixels-grid.svg' | relative_url }}"> -->
+    <div id="site-graphic" class="window optional" data-zoom-delay="true">
+        <img id="site-logo" src="{{ '/assets/images/analemma-pixels-grid.svg' | relative_url }}">
     </div>
 
 </header>

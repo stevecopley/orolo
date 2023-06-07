@@ -33,34 +33,34 @@ window.addEventListener( 'DOMContentLoaded', () => {
         { threshold: 1 }
     );
 
-    observer.observe( nav );
+    // observer.observe( nav );
 
 
     // Article observers - triggered when articles in view - highlight any menu items
     navItems.forEach( item => item.classList.remove( 'active' ) );
 
-    observer = new IntersectionObserver(
-        ( [e] ) => {
-            const id = e.target.getAttribute( 'id' );
-            const navItem = document.querySelector( `#main-menu a[href="/#${id}"]` );
+    // observer = new IntersectionObserver(
+    //     ( [e] ) => {
+    //         const id = e.target.getAttribute( 'id' );
+    //         const navItem = document.querySelector( `#main-menu a[href="/#${id}"]` );
 
-            console.log( `INTER ${id} ${e.isIntersecting} -> ${navItem}` );
+    //         console.log( `INTER ${id} ${e.isIntersecting} -> ${navItem}` );
 
-            if( e.isIntersecting ) {
-                navItems.forEach( item => item.classList.remove( 'active' ) );
-                navItem.classList.add( 'active' );
-            }
-            else {
-                navItem.classList.remove( 'active' );
-            }
-        },
-        {
-            // root: document,
-            rootMargin: "-40% 0px -40%",
-            // threshold: 1.0
-            threshold: 0
-        }
-     );
+    //         if( e.isIntersecting ) {
+    //             navItems.forEach( item => item.classList.remove( 'active' ) );
+    //             navItem.classList.add( 'active' );
+    //         }
+    //         else {
+    //             navItem.classList.remove( 'active' );
+    //         }
+    //     },
+    //     {
+    //         // root: document,
+    //         rootMargin: "-40% 0px -40%",
+    //         // threshold: 1.0
+    //         threshold: 0
+    //     }
+    //  );
 
     articles.forEach( ( article ) => observer.observe( article ) );
 
