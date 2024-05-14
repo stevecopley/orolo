@@ -25,8 +25,8 @@ codeRanges.forEach(range => {
 //-----------------------------------------------------------------
 // MARK: Menu Highlight
 
-document.body.addEventListener('htmx:afterSwap', evt => {
-    const contentName = evt.detail.pathInfo.requestPath.replace('/pages/','').replace('.html','');
+document.body.addEventListener('htmx:afterSettle', evt => {
+    const contentName = evt.detail.pathInfo.requestPath.replace('pages/','').replace('.html','');
     const contentLinkId = 'link-' + contentName;
 
     const links = document.querySelectorAll('nav a');

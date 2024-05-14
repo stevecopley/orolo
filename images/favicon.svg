@@ -1,0 +1,57 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svgjs="http://svgjs.com/svgjs"
+    width="464"
+    height="464"
+    viewBox="0 0 464 464">
+
+    <g
+        transform="matrix(1.25, 0, 0, 1.4, -80, -80)"
+        style="fill: black;"
+    >
+        <circle cx="420.6" cy="081.7" r="15" />
+        <circle cx="420.8" cy="092.7" r="15" />
+        <circle cx="407.6" cy="106.7" r="15" />
+        <circle cx="383.6" cy="123.1" r="15" />
+        <circle cx="351.9" cy="141.4" r="15" />
+        <circle cx="315.5" cy="161.4" r="15" />
+        <circle cx="277.2" cy="182.8" r="15" />
+        <circle cx="239.1" cy="205.4" r="15" />
+        <circle cx="203.1" cy="228.6" r="15" />
+        <circle cx="170.4" cy="252.1" r="15" />
+        <circle cx="142.0" cy="268.4" r="15" />
+        <circle cx="118.6" cy="287.7" r="15" />
+        <circle cx="100.3" cy="305.6" r="15" />
+        <circle cx="087.2" cy="322.3" r="15" />
+        <circle cx="079.1" cy="340.1" r="15" />
+        <circle cx="079.7" cy="355.5" r="15" />
+        <circle cx="084.3" cy="365.9" r="15" />
+        <circle cx="090.3" cy="370.9" r="15" />
+        <circle cx="100.6" cy="377.3" r="15" />
+        <circle cx="110.6" cy="372.0" r="15" />
+        <circle cx="120.3" cy="362.1" r="15" />
+        <circle cx="130.2" cy="347.8" r="15" />
+        <circle cx="140.7" cy="329.6" r="15" />
+        <circle cx="148.6" cy="307.9" r="15" />
+        <circle cx="155.9" cy="283.6" r="15" />
+        <circle cx="163.0" cy="257.2" r="15" />
+        <circle cx="170.6" cy="229.5" r="15" />
+        <circle cx="179.7" cy="201.5" r="15" />
+        <circle cx="191.6" cy="173.9" r="15" />
+        <circle cx="207.9" cy="147.7" r="15" />
+        <circle cx="230.2" cy="123.9" r="15" />
+        <circle cx="253.7" cy="103.6" r="15" />
+        <circle cx="282.2" cy="087.7" r="15" />
+        <circle cx="317.3" cy="076.9" r="15" />
+        <circle cx="358.0" cy="071.8" r="15" />
+        <circle cx="392.2" cy="072.1" r="15" />
+        <circle cx="414.6" cy="077.3" r="15" />
+    </g>
+
+    <style>
+        @media (prefers-color-scheme: light) { :root { filter: none; } }
+        @media (prefers-color-scheme: dark) { :root { filter: invert(100%); } }
+    </style>
+</svg>

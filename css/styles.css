@@ -14,14 +14,15 @@
     --col-orange:  #f92;
     --col-red:     #f55;
 
-    --col-back:    #111;
+    --col-back:         #111;
 
-    --col-border:  #fff8;
+    --col-border:       #fff4;
+    --col-border-high:  var(--col-white);
 
     --col-text:         var(--col-white);
     --col-text-inv:     var(--col-black);
-    --col-link-default: var(--col-blue);
 
+    --col-link-default: var(--col-blue);
 }
 
 
@@ -208,7 +209,7 @@ main h2, main h3 {
 h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
     font-size: inherit;
-    margin: 3rem 0 2rem;
+    margin: 3rem 0 1.75rem;
     line-height: 1;
 }
 
@@ -267,9 +268,13 @@ a:hover, a:active {
 /* MARK: Lists
  *****************************************/
 
+dl, ul, ol {
+    margin: 2rem 0;
+}
+
 dl {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 	grid-template: auto / 1fr auto;
 }
 
@@ -287,6 +292,55 @@ ul, ol {
 }
 
 
+/* MARK: Tables
+ *****************************************/
+
+table {
+    border-collapse: collapse;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+table td,
+table th {
+    padding: 1rem 2ch;
+    vertical-align: top;
+}
+
+table th {
+    font-weight: inherit;
+    color: var(--col-orange);
+    text-align: left;
+}
+
+table tr:first-child > * {
+    padding-top: 0;
+}
+
+table tr:last-child > * {
+    padding-bottom: 0;
+}
+
+table tr :first-child {
+    padding-left: 0;
+}
+
+table tr :last-child {
+    padding-right: 0;
+}
+
+table td h3 {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+table td img {
+    margin: 0;
+}
+
+
 /* MARK: Images
  *****************************************/
 
@@ -294,16 +348,18 @@ main img {
     display: block;
     width: 100%;
     max-height: 25ch;
+    min-height: 10ch;
+    min-width: 10ch;
     object-fit: cover;
     margin: 2rem auto;
     border: 1px solid var(--col-border);
     opacity: 1;
+    background-color: var(--col-black);
     filter: grayscale(0.75);
     transition: opacity 250ms, filter 100ms;
 }
 
 main img:hover {
-    border-color: var(--col-white);
     filter: none;
 }
 
@@ -312,57 +368,31 @@ main.htmx-settling img {
     opacity: 0;
 }
 
-/* MARK: Tables
- *****************************************/
-
-table {
-    border-collapse: collapse;
-    margin: 1rem auto;
-    width: 100%;
-}
-
-td {
-    padding: 1rem 2ch;
-    vertical-align: top;
-}
-
-td:first-child {
-    padding-left: 0;
-}
-
-td:last-child {
-    padding-right: 0;
-}
-
-td h3 {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-}
-
-td img {
-    margin: 0;
-}
-
 
 /* MARK: Gallery
  *****************************************/
 
 #gallery {
     overflow-x: auto;
+    margin: 2rem 0;
 }
 
 #gallery table {
     min-width: 30ch;
+    margin: 0 auto;
 }
 
 #gallery img {
     min-width: 15ch;
 }
 
+#gallery tr:hover img {
+    filter: none;
+}
+
 #gallery img:hover {
     cursor: pointer;
+    border-color: var(--col-border-high);
 }
 
 #gallery img.zoomed {
@@ -370,6 +400,7 @@ td img {
     width: 90%;
     height: auto;
     max-height: unset;
+    min-height: 5ch;
     left: 50%;
     top: 50%;
     transition: none;
