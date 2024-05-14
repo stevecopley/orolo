@@ -9,7 +9,7 @@
     <title>Orolo</title>
 
     <script src="https://unpkg.com/htmx.org"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     >
         <h1><a
             href=""
-            hx-get="/pages/intro.html"
+            hx-get="pages/intro.html"
             hx-target="main"
         >orolo.dev</a></h1>
 
@@ -33,7 +33,7 @@
 
         <nav
             hx-trigger="load delay:500ms"
-            hx-get="/components/nav.html"
+            hx-get="components/nav.html"
         ></nav>
 
         <div class="divider"></div>
@@ -41,7 +41,7 @@
         <div
             id="social"
             hx-trigger="load delay:1000ms"
-            hx-get="/components/social.html"
+            hx-get="components/social.html"
         ></div>
 
         <div class="divider"></div>
@@ -50,11 +50,11 @@
 
     <main
         hx-trigger="load delay:2000ms"
-        hx-get="/pages/intro.html"
+        hx-get="pages/intro.html"
         hx-target="main"
     ></main>
 
-    <script src="/js/orolo.js"></script>
+    <script src="js/orolo.js"></script>
 
 </body>
 
