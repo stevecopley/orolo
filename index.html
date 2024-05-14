@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orolo</title>
+
+    <script src="https://unpkg.com/htmx.org"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header
+        hx-swap="swap:500ms settle:250ms show:main:top"
+    >
+        <h1><a
+            href=""
+            hx-get="/pages/intro.html"
+            hx-target="main"
+        >orolo.dev</a></h1>
+
+        <div id="analemma">
+            <object id="analemma" data="images/analemma.svg"></object>
+        </div>
+
+        <h2>The home of Steve Copley</h2>
+
+        <div class="divider"></div>
+
+        <nav
+            hx-trigger="load delay:500ms"
+            hx-get="/components/nav.html"
+        ></nav>
+
+        <div class="divider"></div>
+
+        <div
+            id="social"
+            hx-trigger="load delay:1000ms"
+            hx-get="/components/social.html"
+        ></div>
+
+        <div class="divider"></div>
+
+    </header>
+
+    <main
+        hx-trigger="load delay:2000ms"
+        hx-get="/pages/intro.html"
+        hx-target="main"
+    ></main>
+
+    <script src="/js/orolo.js"></script>
+
+</body>
+
+</html>

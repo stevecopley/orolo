@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300..700&display=swap');
+
+
+:root {
+    --col-black:   #000;
+    --col-white:   #fff;
+    --col-grey:    #888;
+    --col-purple:  #b6f;
+    --col-pink:    #f4b;
+    --col-blue:    #2bf;
+    --col-green:   #2e9;
+    --col-acid:    #9f4;
+    --col-yellow:  #dd2;
+    --col-orange:  #f92;
+    --col-red:     #f55;
+
+    --col-back:    #111;
+
+    --col-border:  #fff8;
+
+    --col-text:         var(--col-white);
+    --col-text-inv:     var(--col-black);
+    --col-link-default: var(--col-blue);
+
+}
+
+
+/* MARK: General
+ *****************************************/
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+
+    font-family: "Spline Sans Mono", monospace;
+
+    font-size: min(5vw, 20px);
+    font-optical-sizing: auto;
+
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 1.5;
+
+    background-color: #3d0000;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    --col-link: var(--col-link-default);
+
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+
+    padding: 3rem max(3vw, calc((100% - 100ch) / 2));
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: var(--col-back);
+    color: var(--col-text);
+}
+
+
+/* MARK: Header
+ *****************************************/
+
+body > header {
+    min-width: 25ch;
+    max-width: 60ch;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 90ch) {
+    body > header {
+        position: sticky;
+        top: 3rem;
+        /* background-color: var(--col-back); */
+        text-align: initial;
+    }
+}
+
+body > header > h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+body > header > h2 {
+    color: var(--col-pink);
+    margin: 0;
+}
+
+
+
+/* MARK: Nav
+ *****************************************/
+
+nav {
+    --col-link: var(--col-yellow);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+/*
+    display: flex;
+    gap: 0.5ch 1ch;
+    flex-wrap: wrap; */
+}
+
+nav li {
+    margin: 0;
+    display: inline;
+    white-space: nowrap;
+}
+
+
+/* MARK: Social
+ *****************************************/
+
+#social {
+    --col-link: var(--col-green);
+}
+
+#social a {
+    white-space: nowrap;
+}
+
+
+/* MARK: Analemma
+ *****************************************/
+
+#analemma {
+    height: 18ch;
+    width: auto;
+    margin: 0 auto;
+}
+
+
+/* MARK: Divider
+ *****************************************/
+
+.divider {
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    color: var(--col-grey);
+    opacity: 0.5;
+}
+
+.divider::before {
+    content: '--------------------------------------------------------------';
+}
+
+
+/* MARK: Main
+ *****************************************/
+
+main {
+    min-width: 30ch;
+    width: 100%;
+    flex: 3;
+    scroll-margin: 3rem;
+}
+
+main h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+main h2, main h3 {
+    text-align: center;
+}
+
+@media screen and (min-width: 90ch) {
+    main h2, main h3 {
+        text-align: initial;
+    }
+}
+
+
+/* MARK: Headings
+ *****************************************/
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 3rem 0 2rem;
+    line-height: 1;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+h3 { color: var(--col-acid); }
+
+
+/* MARK: Text
+ *****************************************/
+
+p {
+    margin: 1rem 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    /* color: var(--col-purple); */
+    font-style: italic;
+}
+
+
+/* MARK: Links
+ *****************************************/
+
+a {
+    color: var(--col-link);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: var(--col-text-inv);
+    background: var(--col-link);
+    outline: 0.2em solid var(--col-link);
+    font-weight: 600;
+}
+
+:focus,
+.active {
+    font-weight: 600;
+    filter: brightness(120%);
+    outline: none;
+}
+
+
+/* MARK: Lists
+ *****************************************/
+
+dl {
+    display: grid;
+    gap: 1rem;
+	grid-template: auto / 1fr auto;
+}
+
+dt {
+    color: var(--col-orange);
+}
+
+dd {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 1ch;
+}
+
+
+/* MARK: Images
+ *****************************************/
+
+main img {
+    display: block;
+    width: 100%;
+    max-height: 25ch;
+    object-fit: cover;
+    margin: 2rem auto;
+    border: 1px solid var(--col-border);
+    opacity: 1;
+    filter: grayscale(0.75);
+    transition: opacity 250ms, filter 100ms;
+}
+
+main img:hover {
+    border-color: var(--col-white);
+    filter: none;
+}
+
+main.htmx-swapping img,
+main.htmx-settling img {
+    opacity: 0;
+}
+
+/* MARK: Tables
+ *****************************************/
+
+table {
+    border-collapse: collapse;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+td {
+    padding: 1rem 2ch;
+    vertical-align: top;
+}
+
+td:first-child {
+    padding-left: 0;
+}
+
+td:last-child {
+    padding-right: 0;
+}
+
+td h3 {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+td img {
+    margin: 0;
+}
+
+
+/* MARK: Gallery
+ *****************************************/
+
+#gallery {
+    overflow-x: auto;
+}
+
+#gallery table {
+    min-width: 30ch;
+}
+
+#gallery img {
+    min-width: 15ch;
+}
+
+#gallery img:hover {
+    cursor: pointer;
+}
+
+#gallery img.zoomed {
+    position: fixed;
+    width: 90%;
+    height: auto;
+    max-height: unset;
+    left: 50%;
+    top: 50%;
+    transition: none;
+    translate: -50% -50%;
+    z-index: 999;
+}
+
+

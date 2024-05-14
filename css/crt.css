@@ -1,0 +1,72 @@
+/* MARK: CRT Animation
+ *****************************************/
+
+:root {
+    --col-dark:    #0008;
+    --col-trans:   #0000;
+    --col-glow:    #fff8;
+}
+
+
+body {
+    text-shadow: 0 0 0.75em var(--col-glow);
+}
+
+
+body::after {
+    /* content: ''; */
+    pointer-events: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    background-image: repeating-linear-gradient(
+        var(--col-dark)  0,
+        var(--col-dark)  2px,
+        var(--col-trans) 2px,
+        var(--col-trans) 3px );
+    animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+    0%   { opacity: 100%; }
+    35%  { opacity:  80%; }
+    40%  { opacity:  80%; }
+    50%  { opacity:  50%; }
+    55%  { opacity:  50%; }
+    60%  { opacity:  70%; }
+    65%  { opacity:  70%; }
+    70%  { opacity:  60%; }
+    90%  { opacity:  60%; }
+    100% { opacity: 100%; }
+}
+
+body::before {
+    /* content: ''; */
+    pointer-events: none;
+    display: block;
+    position: fixed;
+    top: -200px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-image: linear-gradient(
+        var(--col-trans)  0%,
+        var(--col-glow)   90%,
+        var(--col-trans) 100%
+    );
+    opacity: 0.1;
+    animation: scanline 10s linear infinite;
+}
+
+@keyframes scanline {
+    0%   { top: -200px; }
+    50%  { top: -200px; }
+    100% { top: 100vh; }
+}
+
+
