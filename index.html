@@ -8,9 +8,11 @@
 
     <title>Orolo</title>
 
-    <link   rel="icon"       href="images/favicon.svg" type="image/svg+xml">
-    <link   rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+
     <script src="https://unpkg.com/htmx.org"></script>
+    <script src="js/orolo.js"></script>
 </head>
 
 <body>
@@ -56,8 +58,7 @@
         hx-swap="swap:500ms settle:250ms show:top"
     ></main>
 
-    <script src="js/orolo.js"></script>
-
+    <script>processPage();</script>
 </body>
 
 </html>
