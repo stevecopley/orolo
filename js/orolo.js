@@ -1,14 +1,14 @@
 function processPage() {
-    // let page = 'intro';
-    // const url = window.location.href;
-    // if (url.includes('#')) {
-    //     page = url.split('#').pop();
-    // }
     let page = 'intro';
-    let params = new URL(document.location).searchParams;
-    if (params.get('view')) {
-        page = params.get('view');
+    const url = window.location.href;
+    if (url.includes('#')) {
+        page = url.split('#').pop();
     }
+    // let page = 'intro';
+    // let params = new URL(document.location).searchParams;
+    // if (params.get('view')) {
+    //     page = params.get('view');
+    // }
     htmx.find('main').setAttribute('hx-get', `pages/${page}.html`);
     htmx.process('main');
 
